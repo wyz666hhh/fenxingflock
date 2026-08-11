@@ -63,9 +63,12 @@ a:hover {
 
 /* ============================================================
    📌 三、通用工具类
-   .container  → 页面内容居中容器（最大宽度 1100px）
-   .section    → 标准区块上下间距
-   .btn        → 按钮基础样式
+   .container      → 页面内容居中容器（最大宽度 1100px）
+   .section        → 标准区块上下间距
+   .btn            → 按钮基础样式
+   .text-center    → 文本居中
+   .section-alt    → 灰色背景区块
+   .img-placeholder → 占位图样式（真图到位后删除此类）
    ============================================================ */
 .container {
   max-width: 1100px;
@@ -75,6 +78,21 @@ a:hover {
 
 .section {
   padding: 80px 0;           /* 每个区块的上下间距 */
+}
+
+/* 文本居中 */
+.text-center {
+  text-align: center;
+}
+
+/* 灰色背景区块 */
+.section-alt {
+  background: var(--gray-light);
+}
+
+/* 占位图（替换真图后删除元素的此类名） */
+.img-placeholder {
+  background: #e8ecf0;
 }
 
 /* 区块标题（居中大标题） */
@@ -97,6 +115,13 @@ a:hover {
   margin-right: auto;
 }
 
+/* 横幅副标题（page-banner 下方的说明文字） */
+.banner-sub {
+  color: var(--gray);
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
 /* ---- 按钮 ---- */
 .btn {
   display: inline-block;
@@ -108,6 +133,9 @@ a:hover {
   text-align: center;
   transition: all 0.25s;
   border: 2px solid transparent;
+}
+.btn-mt {
+  margin-top: 12px;          /* 按钮上方间距（产品页 CTA 用） */
 }
 
 /* 实心按钮（主 CTA） */
@@ -834,13 +862,6 @@ footer {
    📌 十六、产品页新布局
    产品快速导航 + 统一图文区 + 参数高亮卡 + 色卡区块
    ============================================================ */
-
-/* ---- 横幅副标题 ---- */
-.banner-sub {
-  color: var(--gray);
-  margin-top: 10px;
-  font-size: 1rem;
-}
 
 /* ---- 产品快速导航（sticky） ---- */
 .product-nav {
