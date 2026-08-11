@@ -176,4 +176,54 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // ==========================================
+  // 功能 5：产品导航滚动高亮（Scroll Spy）
+  // ==========================================
+  // 原理：监听页面滚动，判断当前可见的产品区块，
+  // 自动高亮对应的导航按钮
+  var productNav = document.getElementById('productNav');
+  if (productNav) {
+    var navLinks = productNav.querySelectorAll('.product-nav-link');
+    var sections = [];
+    navLinks.forEach(function (link) {
+      var href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        var section = document.getElementById(href.substring(1));
+        if (section) {
+          sections.push({ link: link, section: section });
+        }
+      }
+    });
+
+    // 监听滚动（用 throttle 优化性能）
+    var ticking = false;
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        requestAnimationFrame(function () {
+          updateActiveNav();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+
+    function updateActiveNav() {
+      var scrollY = window.scrollY + 160; // offset: header + nav 高度
+      var currentSection = null;
+
+      sections.forEach(function (item) {
+        if (item.section.offsetTop <= scrollY) {
+          currentSection = item;
+        }
+      });
+
+      navLinks.forEach(function (link) {
+        link.classList.remove('active');
+      });
+      if (currentSection) {
+        currentSection.link.classList.add('active');
+      }
+    }
+  }
+
 });

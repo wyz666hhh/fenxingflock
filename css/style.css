@@ -389,64 +389,9 @@ nav a:hover {
 }
 
 /* ============================================================
-   📌 十、Products 页面
-   每个产品一行：左图右文（交替），含规格表格
+   📌 十、Products 页面（见 十六、产品页新布局）
+   旧样式已迁移，此处保留注释以防追溯
    ============================================================ */
-.product-detail {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  align-items: start;
-  margin-bottom: 60px;
-  padding-bottom: 60px;
-  border-bottom: 1px solid var(--border);
-}
-
-.product-detail:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.product-detail img {
-  border-radius: var(--radius);
-}
-
-.product-info h2 {
-  font-size: 1.55rem;
-  color: var(--navy);
-  margin-bottom: 14px;
-}
-
-.product-info p {
-  color: var(--gray);
-  margin-bottom: 14px;
-  font-size: 0.95rem;
-}
-
-/* 产品规格列表 */
-.product-info .specs {
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-.product-info .specs li {
-  padding: 6px 0;
-  font-size: 0.93rem;
-  color: var(--gray-dark);
-  border-bottom: 1px solid var(--border);
-}
-
-.product-info .specs li strong {
-  color: var(--navy);
-  margin-right: 8px;
-}
-
-@media (max-width: 768px) {
-  .product-detail {
-    grid-template-columns: 1fr;   /* 手机端单列 */
-  }
-}
 
 /* ---- 规格对比表格（产品页 & 文章页共用） ---- */
 .spec-table {
@@ -888,7 +833,219 @@ footer {
 }
 
 /* ============================================================
-   📌 十六、移动端适配
+   📌 十六、产品页新布局
+   产品快速导航 + 统一图文区 + 参数高亮卡 + 色卡区块
+   ============================================================ */
+
+/* ---- 横幅副标题 ---- */
+.banner-sub {
+  color: var(--gray);
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* ---- 产品快速导航（sticky） ---- */
+.product-nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 60px;                   /* header 高度 */
+  z-index: 999;
+  padding: 8px 0;
+  overflow-x: auto;            /* 手机端横向滚动 */
+  white-space: nowrap;
+}
+.product-nav .container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+/* 🔧 导航按钮（药丸状） */
+.product-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--gray);
+  background: var(--gray-light);
+  border-radius: 20px;         /* 药丸形 */
+  transition: all 0.2s;
+  text-decoration: none;
+}
+.product-nav-link:hover {
+  color: var(--navy);
+  background: #e0e5ec;
+}
+/* 当前所在产品区的导航高亮 */
+.product-nav-link.active {
+  background: var(--navy);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .product-nav .container {
+    justify-content: flex-start;  /* 手机端左对齐，可横滚 */
+    padding: 0 12px;
+  }
+  .product-nav-link {
+    padding: 6px 14px;
+    font-size: 0.82rem;
+  }
+}
+
+/* ---- 产品区块（替代旧的 .product-detail 布局） ---- */
+.product-section {
+  padding: 70px 0;
+  border-bottom: 1px solid var(--border);
+}
+.product-section.alt {
+  background: var(--gray-light);
+}
+.product-section:last-of-type {
+  border-bottom: none;
+}
+
+/* ---- 产品标题区（图标 + 标题 + 描述） ---- */
+.product-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.product-header .product-icon {
+  font-size: 2.6rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.product-header h2 {
+  font-size: 1.7rem;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.product-header p {
+  font-size: 0.98rem;
+  color: var(--gray);
+  max-width: 600px;
+  line-height: 1.65;
+}
+
+/* ---- 产品图文区（左图右文，统一布局） ---- */
+.product-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* 🔧 产品主图容器 */
+.product-gallery {
+  position: sticky;
+  top: 140px;                  /* header + product-nav 高度 */
+}
+.product-gallery img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+.gallery-caption {
+  font-size: 0.82rem;
+  color: var(--gray);
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* 🔧 产品详情区 */
+.product-details h3 {
+  font-size: 1.15rem;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+/* ---- 关键参数高亮卡 ---- */
+.highlight-cards {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.highlight-card {
+  flex: 1;
+  min-width: 100px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.highlight-card:hover {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+.highlight-card .hl-label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--steel-light);
+  margin-bottom: 4px;
+}
+.highlight-card .hl-value {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+/* ---- 色卡区块（独立于 product-body 下方，全宽） ---- */
+.swatch-block {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+.swatch-block-header {
+  margin-bottom: 12px;
+}
+.swatch-block-header h3 {
+  font-size: 1.15rem;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.swatch-block-header p {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .product-body {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .product-gallery {
+    position: static;          /* 手机端不吸顶 */
+  }
+  .product-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .product-header h2 {
+    font-size: 1.4rem;
+  }
+  .product-section {
+    padding: 48px 0;
+  }
+  .highlight-card {
+    min-width: 80px;
+    padding: 10px 8px;
+  }
+}
+
+/* ============================================================
+   📌 十七、移动端适配
    ============================================================ */
 @media (max-width: 480px) {
   .hero h1 {

@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 🔧 SEO 描述 -->
-  <meta name="description" content="Our product range: nylon flock fiber, rayon flock fiber, polyester flock fiber, flocking adhesives, color pastes, chemicals, and equipment. Specifications, applications, and MOQ details.">
-  <title>Products — Flock Fiber, Adhesives, Chemicals &amp; Equipment | Fenxing Flock</title>
+  <meta name="description" content="Fenxing Flock product range: nylon flock fiber (full dull & semi dull), flocking adhesives (water-based & solvent-based), color pastes, chemicals, and flocking equipment. Specifications, MOQ, and inquiry.">
+  <title>Products — Nylon Flock Fiber, Adhesives, Color Pastes &amp; Equipment | Fenxing Flock</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- ===== 顶部导航栏（共用） ===== -->
+<!-- ==================== 顶部导航栏（共用） ==================== -->
 <header>
   <div class="container">
     <a href="index.html" class="logo">Fenxing<span>Flock</span></a>
@@ -29,140 +29,196 @@
   </div>
 </header>
 
-<!-- ===== 页面顶部横幅 ===== -->
+<!-- ==================== 页面顶部横幅 ==================== -->
 <section class="page-banner">
   <div class="container">
     <h1>Our Products</h1>
-    <p style="color:var(--gray);margin-top:10px;">Flocking raw materials — from fiber to finish</p>
+    <!-- 🔧 改副标题 -->
+    <p class="banner-sub">Quality flocking raw materials — sourced, inspected, and delivered from China</p>
   </div>
 </section>
 
-<!-- ==================== 产品区 1：绒毛 Flock Fibers ==================== -->
-<section class="section" id="flock-fiber">
+<!-- ==================== 产品快速导航（sticky） ==================== -->
+<!-- 🔧 增删产品类别时同步改这里 -->
+<nav class="product-nav" id="productNav">
   <div class="container">
-    <div class="product-detail">
-      <!-- 🔧 产品图：替换 images/products/flock-fiber.jpg -->
-      <div>
-        <img src="images/products/flock-fiber.jpg" alt="Nylon Rayon Polyester Flock Fiber" style="background:#e8ecf0;min-height:280px;">
-        <p style="font-size:0.8rem;color:var(--gray);margin-top:8px;text-align:center;">Nylon flock fiber samples — multiple deniers and lengths available</p>
-      </div>
-      <!-- 🔧 产品信息区 -->
-      <div class="product-info">
-        <h2>Flock Fibers — Nylon, Rayon &amp; Polyester</h2>
-        <p>We supply precision-cut flock fibers for electrostatic flocking across all major applications: textiles, automotive interiors, packaging, home décor, and more. Three material types to match your specific requirements.</p>
+    <a href="#flock-fiber" class="product-nav-link active">
+      <span>🧵</span> Flock Fibers
+    </a>
+    <a href="#adhesives" class="product-nav-link">
+      <span>🧪</span> Adhesives
+    </a>
+    <a href="#color-paste" class="product-nav-link">
+      <span>🎨</span> Color Pastes
+    </a>
+    <a href="#equipment" class="product-nav-link">
+      <span>⚙️</span> Equipment
+    </a>
+  </div>
+</nav>
 
-        <!-- 🔧 规格对比表：改数据在这里 -->
+<!-- ================================================================
+   产品区 1：绒毛 Flock Fibers
+   布局：大图左 + 规格表右 + 色卡画廊全宽
+   ================================================================ -->
+<section class="product-section" id="flock-fiber">
+  <div class="container">
+
+    <!-- 产品标题区 -->
+    <div class="product-header">
+      <span class="product-icon">🧵</span>
+      <div>
+        <h2>Nylon Flock Fibers</h2>
+        <!-- 🔧 改产品一句描述 -->
+        <p>Precision-cut nylon flock fiber for electrostatic flocking. Available in Full Dull and Semi Dull finishes, multiple deniers and lengths.</p>
+      </div>
+    </div>
+
+    <!-- 图文区 -->
+    <div class="product-body">
+      <!-- 🔧 主图：替换 images/products/flock-fiber.jpg -->
+      <div class="product-gallery">
+        <img src="images/products/flock-fiber.jpg" alt="Nylon Flock Fiber">
+        <p class="gallery-caption">Nylon flock fiber — full dull finish shown</p>
+      </div>
+
+      <!-- 规格详情 -->
+      <div class="product-details">
+        <h3>Specifications</h3>
+        <!-- 🔧 规格对比表 -->
         <table class="spec-table">
           <thead>
-            <tr><th>Specification</th><th>Nylon</th><th>Rayon</th><th>Polyester</th></tr>
+            <tr><th>Parameter</th><th>Full Dull Nylon</th><th>Semi Dull Nylon</th></tr>
           </thead>
           <tbody>
-            <tr><td>Denier</td><td>1.5D – 30D</td><td>1.5D – 25D</td><td>1.5D – 20D</td></tr>
-            <tr><td>Length</td><td>0.3mm – 5.0mm</td><td>0.3mm – 3.0mm</td><td>0.3mm – 3.0mm</td></tr>
-            <tr><td>Softness</td><td>★★★★☆</td><td>★★★★★</td><td>★★★☆☆</td></tr>
-            <tr><td>Durability</td><td>★★★★★</td><td>★★★☆☆</td><td>★★★★☆</td></tr>
-            <tr><td>Cost</td><td>$$$</td><td>$$</td><td>$</td></tr>
-            <tr><td>Best For</td><td>Automotive, industrial</td><td>Textiles, apparel, home décor</td><td>Crafts, packaging, general use</td></tr>
+            <tr><td>Denier Range</td><td>1.5D – 30D</td><td>1.5D – 20D</td></tr>
+            <tr><td>Cut Length</td><td>0.3mm – 5.0mm</td><td>0.3mm – 3.0mm</td></tr>
+            <tr><td>Finish</td><td>Matte, non-reflective</td><td>Slight sheen</td></tr>
+            <tr><td>Electrostatic Performance</td><td>★★★★★</td><td>★★★★☆</td></tr>
+            <tr><td>Abrasion Resistance</td><td>★★★★★</td><td>★★★★☆</td></tr>
+            <tr><td>Best For</td><td>Automotive, industrial, premium</td><td>General flocking, cost-sensitive</td></tr>
           </tbody>
         </table>
 
-        <!-- 🔧 规格说明列表 -->
-        <ul class="specs">
-          <li><strong>Colors:</strong> Any color available — we match your sample or Pantone code</li>
-          <li><strong>MOQ:</strong> 50 kg per color (negotiable for trial orders)</li>
-          <li><strong>Packaging:</strong> 25 kg/bag, custom packaging available</li>
-        </ul>
-
-        <!-- ===== 🎨 色卡画廊：点击图片放大 ===== -->
-        <div class="swatch-gallery" style="margin-top:24px;">
-          <h4 style="font-size:1.05rem;color:var(--navy);margin-bottom:4px;">Color Swatches</h4>
-          <p style="font-size:0.85rem;color:var(--gray);margin-bottom:8px;">Click any swatch to enlarge — actual colors may vary slightly from screen display</p>
-
-          <!-- Tab 标签：切换材质 -->
-          <div class="swatch-tabs">
-            <button class="swatch-tab active" data-tab="nylon">Nylon</button>
-            <button class="swatch-tab" data-tab="rayon">Rayon</button>
-            <button class="swatch-tab" data-tab="polyester">Polyester</button>
+        <!-- 🔧 关键参数高亮卡 -->
+        <div class="highlight-cards">
+          <div class="highlight-card">
+            <span class="hl-label">MOQ</span>
+            <span class="hl-value">50 kg / color</span>
           </div>
-
-          <!-- 🔧 Nylon 色卡面板 -->
-          <div class="swatch-panel active" id="swatch-nylon">
-            <div class="swatch-grid">
-              <div class="swatch-item" data-full="images/products/JBN1.jpg" data-caption="Nylon Flock Fiber — Sample 1">
-                <img src="images/products/JBN1.jpg" alt="Nylon Flock Fiber 1" loading="lazy">
-                <div class="swatch-label">JBN-1</div>
-              </div>
-              <div class="swatch-item" data-full="images/products/JBN2.jpg" data-caption="Nylon Flock Fiber — Sample 2">
-                <img src="images/products/JBN2.jpg" alt="Nylon Flock Fiber 2" loading="lazy">
-                <div class="swatch-label">JBN-2</div>
-              </div>
-              <div class="swatch-item" data-full="images/products/JBN3.jpg" data-caption="Nylon Flock Fiber — Sample 3">
-                <img src="images/products/JBN3.jpg" alt="Nylon Flock Fiber 3" loading="lazy">
-                <div class="swatch-label">JBN-3</div>
-              </div>
-              <div class="swatch-item" data-full="images/products/JBN4.jpg" data-caption="Nylon Flock Fiber — Sample 4">
-                <img src="images/products/JBN4.jpg" alt="Nylon Flock Fiber 4" loading="lazy">
-                <div class="swatch-label">JBN-4</div>
-              </div>
-            </div>
+          <div class="highlight-card">
+            <span class="hl-label">Packaging</span>
+            <span class="hl-value">25 kg / bag</span>
           </div>
-
-          <!-- 🔧 Rayon 色卡面板 -->
-          <div class="swatch-panel" id="swatch-rayon">
-            <div class="swatch-grid">
-              <div class="swatch-item" data-full="images/products/MFN1.jpg" data-caption="Rayon Flock Fiber — Sample 1">
-                <img src="images/products/MFN1.jpg" alt="Rayon Flock Fiber 1" loading="lazy">
-                <div class="swatch-label">MFN-1</div>
-              </div>
-              <div class="swatch-item" data-full="images/products/MFN2.jpg" data-caption="Rayon Flock Fiber — Sample 2">
-                <img src="images/products/MFN2.jpg" alt="Rayon Flock Fiber 2" loading="lazy">
-                <div class="swatch-label">MFN-2</div>
-              </div>
-              <div class="swatch-item" data-full="images/products/MFN3.jpg" data-caption="Rayon Flock Fiber — Sample 3">
-                <img src="images/products/MFN3.jpg" alt="Rayon Flock Fiber 3" loading="lazy">
-                <div class="swatch-label">MFN-3</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 🔧 Polyester 色卡面板 -->
-          <div class="swatch-panel" id="swatch-polyester">
-            <div class="swatch-grid">
-              <div class="swatch-item" data-full="images/products/TFN1.jpg" data-caption="Polyester Flock Fiber — Sample 1">
-                <img src="images/products/TFN1.jpg" alt="Polyester Flock Fiber 1" loading="lazy">
-                <div class="swatch-label">TFN-1</div>
-              </div>
-              <div class="swatch-item" data-full="images/products/TFN2.jpg" data-caption="Polyester Flock Fiber — Sample 2">
-                <img src="images/products/TFN2.jpg" alt="Polyester Flock Fiber 2" loading="lazy">
-                <div class="swatch-label">TFN-2</div>
-              </div>
-              <div class="swatch-item" data-full="images/products/TFN3.jpg" data-caption="Polyester Flock Fiber — Sample 3">
-                <img src="images/products/TFN3.jpg" alt="Polyester Flock Fiber 3" loading="lazy">
-                <div class="swatch-label">TFN-3</div>
-              </div>
-              <div class="swatch-item" data-full="images/products/TFN4.jpg" data-caption="Polyester Flock Fiber — Sample 4">
-                <img src="images/products/TFN4.jpg" alt="Polyester Flock Fiber 4" loading="lazy">
-                <div class="swatch-label">TFN-4</div>
-              </div>
-            </div>
+          <div class="highlight-card">
+            <span class="hl-label">Color Match</span>
+            <span class="hl-value">Pantone / Sample</span>
           </div>
         </div>
-        <!-- ===== 🎨 色卡画廊结束 ===== -->
 
+        <!-- 🔧 CTA 按钮 -->
+        <a href="contact.html" class="btn btn-primary" style="margin-top:12px;">📧 Inquire About Flock Fibers</a>
       </div>
     </div>
+
+    <!-- ===== 色卡画廊 ===== -->
+    <div class="swatch-block">
+      <div class="swatch-block-header">
+        <h3>🎨 Nylon Color Swatches</h3>
+        <!-- 🔧 色卡说明文字 -->
+        <p>Click any swatch to enlarge. Actual product colors may vary slightly from screen display.</p>
+      </div>
+
+      <!-- Tab 切换：全消光 / 半消光 -->
+      <div class="swatch-tabs">
+        <button class="swatch-tab active" data-tab="fulldull">Full Dull Nylon</button>
+        <button class="swatch-tab" data-tab="semidull">Semi Dull Nylon</button>
+      </div>
+
+      <!-- 🔧 全消光尼龙：JBN + MFN 系列 -->
+      <div class="swatch-panel active" id="swatch-fulldull">
+        <div class="swatch-grid">
+          <div class="swatch-item" data-full="images/products/JBN1.jpg" data-caption="Full Dull Nylon — JBN Series, Sample 1">
+            <img src="images/products/JBN1.jpg" alt="Full Dull Nylon JBN-1" loading="lazy">
+            <div class="swatch-label">JBN-1</div>
+          </div>
+          <div class="swatch-item" data-full="images/products/JBN2.jpg" data-caption="Full Dull Nylon — JBN Series, Sample 2">
+            <img src="images/products/JBN2.jpg" alt="Full Dull Nylon JBN-2" loading="lazy">
+            <div class="swatch-label">JBN-2</div>
+          </div>
+          <div class="swatch-item" data-full="images/products/JBN3.jpg" data-caption="Full Dull Nylon — JBN Series, Sample 3">
+            <img src="images/products/JBN3.jpg" alt="Full Dull Nylon JBN-3" loading="lazy">
+            <div class="swatch-label">JBN-3</div>
+          </div>
+          <div class="swatch-item" data-full="images/products/JBN4.jpg" data-caption="Full Dull Nylon — JBN Series, Sample 4">
+            <img src="images/products/JBN4.jpg" alt="Full Dull Nylon JBN-4" loading="lazy">
+            <div class="swatch-label">JBN-4</div>
+          </div>
+          <div class="swatch-item" data-full="images/products/MFN1.jpg" data-caption="Full Dull Nylon — MFN Series, Sample 1">
+            <img src="images/products/MFN1.jpg" alt="Full Dull Nylon MFN-1" loading="lazy">
+            <div class="swatch-label">MFN-1</div>
+          </div>
+          <div class="swatch-item" data-full="images/products/MFN2.jpg" data-caption="Full Dull Nylon — MFN Series, Sample 2">
+            <img src="images/products/MFN2.jpg" alt="Full Dull Nylon MFN-2" loading="lazy">
+            <div class="swatch-label">MFN-2</div>
+          </div>
+          <div class="swatch-item" data-full="images/products/MFN3.jpg" data-caption="Full Dull Nylon — MFN Series, Sample 3">
+            <img src="images/products/MFN3.jpg" alt="Full Dull Nylon MFN-3" loading="lazy">
+            <div class="swatch-label">MFN-3</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔧 半消光尼龙：TFN 系列 -->
+      <div class="swatch-panel" id="swatch-semidull">
+        <div class="swatch-grid">
+          <div class="swatch-item" data-full="images/products/TFN1.jpg" data-caption="Semi Dull Nylon — TFN Series, Sample 1">
+            <img src="images/products/TFN1.jpg" alt="Semi Dull Nylon TFN-1" loading="lazy">
+            <div class="swatch-label">TFN-1</div>
+          </div>
+          <div class="swatch-item" data-full="images/products/TFN2.jpg" data-caption="Semi Dull Nylon — TFN Series, Sample 2">
+            <img src="images/products/TFN2.jpg" alt="Semi Dull Nylon TFN-2" loading="lazy">
+            <div class="swatch-label">TFN-2</div>
+          </div>
+          <div class="swatch-item" data-full="images/products/TFN3.jpg" data-caption="Semi Dull Nylon — TFN Series, Sample 3">
+            <img src="images/products/TFN3.jpg" alt="Semi Dull Nylon TFN-3" loading="lazy">
+            <div class="swatch-label">TFN-3</div>
+          </div>
+          <div class="swatch-item" data-full="images/products/TFN4.jpg" data-caption="Semi Dull Nylon — TFN Series, Sample 4">
+            <img src="images/products/TFN4.jpg" alt="Semi Dull Nylon TFN-4" loading="lazy">
+            <div class="swatch-label">TFN-4</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /swatch-block -->
   </div>
 </section>
 
-<!-- ==================== 产品区 2：粘合剂 Flocking Adhesives ==================== -->
-<section class="section" id="adhesives" style="background:var(--gray-light);">
+<!-- ================================================================
+   产品区 2：粘合剂 Flocking Adhesives
+   ================================================================ -->
+<section class="product-section alt" id="adhesives">
   <div class="container">
-    <div class="product-detail">
-      <!-- 🔧 产品信息区 -->
-      <div class="product-info">
-        <h2>Flocking Adhesives — Water-Based &amp; Solvent-Based</h2>
-        <p>High-performance adhesives formulated for strong, durable flock bonding on a wide range of substrates. We offer both water-based (eco-friendly, low-VOC) and solvent-based (maximum adhesion) options to match your process requirements.</p>
 
+    <div class="product-header">
+      <span class="product-icon">🧪</span>
+      <div>
+        <h2>Flocking Adhesives</h2>
+        <!-- 🔧 改产品一句描述 -->
+        <p>High-performance water-based and solvent-based adhesives for strong, durable flock bonding on textiles, plastics, rubber, metal, and more.</p>
+      </div>
+    </div>
+
+    <div class="product-body">
+      <!-- 🔧 主图：替换 images/products/adhesive.jpg -->
+      <div class="product-gallery">
+        <img src="images/products/adhesive.jpg" alt="Flocking Adhesive">
+        <p class="gallery-caption">Water-based and solvent-based flocking adhesives</p>
+      </div>
+
+      <div class="product-details">
+        <h3>Adhesive Types &amp; Applications</h3>
         <!-- 🔧 粘合剂对比表 -->
         <table class="spec-table">
           <thead>
@@ -171,78 +227,153 @@
           <tbody>
             <tr><td>Water-Based Acrylic</td><td>Textiles, paper, wood</td><td>Air dry / heat</td><td>Apparel, home textiles, packaging</td></tr>
             <tr><td>Water-Based PU</td><td>Leather, synthetic leather</td><td>Heat curing</td><td>Shoes, bags, automotive interiors</td></tr>
-            <tr><td>Solvent-Based PU</td><td>Plastics, rubber, metal</td><td>Heat curing</td><td>Industrial parts, EPDM seals, automotive</td></tr>
-            <tr><td>Solvent-Based Acrylic</td><td>PVC, ABS, PP (treated)</td><td>Air dry / heat</td><td>Toys, electronics packaging, displays</td></tr>
+            <tr><td>Solvent-Based PU</td><td>Plastics, rubber, metal</td><td>Heat curing</td><td>Industrial parts, EPDM seals</td></tr>
+            <tr><td>Solvent-Based Acrylic</td><td>PVC, ABS, PP (treated)</td><td>Air dry / heat</td><td>Toys, electronics, displays</td></tr>
           </tbody>
         </table>
 
-        <ul class="specs">
-          <li><strong>Viscosity:</strong> Customizable to your application method (spray, roller, screen printing)</li>
-          <li><strong>MOQ:</strong> 20 kg (sample quantities available)</li>
-          <li><strong>Packaging:</strong> 5 kg / 20 kg / 200 kg drums</li>
-        </ul>
-      </div>
-      <!-- 🔧 产品图：替换 images/products/adhesive.jpg -->
-      <div>
-        <img src="images/products/adhesive.jpg" alt="Flocking Adhesive" style="background:#e8ecf0;min-height:280px;">
-        <p style="font-size:0.8rem;color:var(--gray);margin-top:8px;text-align:center;">Water-based and solvent-based flocking adhesives</p>
+        <div class="highlight-cards">
+          <div class="highlight-card">
+            <span class="hl-label">MOQ</span>
+            <span class="hl-value">20 kg</span>
+          </div>
+          <div class="highlight-card">
+            <span class="hl-label">Packaging</span>
+            <span class="hl-value">5 / 20 / 200 kg</span>
+          </div>
+          <div class="highlight-card">
+            <span class="hl-label">Viscosity</span>
+            <span class="hl-value">Customizable</span>
+          </div>
+        </div>
+
+        <a href="contact.html" class="btn btn-primary" style="margin-top:12px;">📧 Inquire About Adhesives</a>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- ==================== 产品区 3：色浆 Color Pastes ==================== -->
-<section class="section" id="color-paste">
+<!-- ================================================================
+   产品区 3：色浆 Color Pastes
+   ================================================================ -->
+<section class="product-section" id="color-paste">
   <div class="container">
-    <div class="product-detail">
-      <!-- 🔧 产品图：替换 images/products/color-paste.jpg -->
+
+    <div class="product-header">
+      <span class="product-icon">🎨</span>
       <div>
-        <img src="images/products/color-paste.jpg" alt="Flocking Color Paste" style="background:#e8ecf0;min-height:280px;">
-        <p style="font-size:0.8rem;color:var(--gray);margin-top:8px;text-align:center;">High-concentration color pastes for flock fiber dyeing</p>
-      </div>
-      <!-- 🔧 产品信息区 -->
-      <div class="product-info">
         <h2>Color Pastes &amp; Dyeing Chemicals</h2>
-        <p>Premium color pastes specifically formulated for flock fiber dyeing. Excellent color fastness, light fastness, and wash fastness. We also supply auxiliary chemicals for pre-treatment and finishing.</p>
-
-        <ul class="specs">
-          <li><strong>Types:</strong> Water-based pigment pastes, solvent-based dye pastes</li>
-          <li><strong>Color Matching:</strong> Custom color matching service — send us your sample</li>
-          <li><strong>Fastness:</strong> Grade 4-5 light fastness; Grade 3-4 wash fastness (ISO standard)</li>
-          <li><strong>MOQ:</strong> 5 kg per color</li>
-          <li><strong>Packaging:</strong> 1 kg / 5 kg / 25 kg containers</li>
-        </ul>
+        <!-- 🔧 改产品一句描述 -->
+        <p>Premium color pastes specifically formulated for flock fiber dyeing. Excellent color fastness, light fastness, and wash fastness — with custom color matching service.</p>
       </div>
     </div>
+
+    <div class="product-body">
+      <!-- 🔧 主图：替换 images/products/color-paste.jpg -->
+      <div class="product-gallery">
+        <img src="images/products/color-paste.jpg" alt="Flocking Color Paste">
+        <p class="gallery-caption">High-concentration color pastes for flock fiber dyeing</p>
+      </div>
+
+      <div class="product-details">
+        <h3>Specifications</h3>
+        <!-- 🔧 色浆规格表 -->
+        <table class="spec-table">
+          <thead>
+            <tr><th>Parameter</th><th>Details</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Type</td><td>Water-based pigment pastes, solvent-based dye pastes</td></tr>
+            <tr><td>Color Matching</td><td>Custom — send us your sample or Pantone code</td></tr>
+            <tr><td>Light Fastness</td><td>Grade 4–5 (ISO standard)</td></tr>
+            <tr><td>Wash Fastness</td><td>Grade 3–4 (ISO standard)</td></tr>
+            <tr><td>Application</td><td>Flock fiber dyeing, pre-treatment, finishing</td></tr>
+          </tbody>
+        </table>
+
+        <div class="highlight-cards">
+          <div class="highlight-card">
+            <span class="hl-label">MOQ</span>
+            <span class="hl-value">5 kg / color</span>
+          </div>
+          <div class="highlight-card">
+            <span class="hl-label">Packaging</span>
+            <span class="hl-value">1 / 5 / 25 kg</span>
+          </div>
+          <div class="highlight-card">
+            <span class="hl-label">Lead Time</span>
+            <span class="hl-value">3–5 days</span>
+          </div>
+        </div>
+
+        <a href="contact.html" class="btn btn-primary" style="margin-top:12px;">📧 Inquire About Color Pastes</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- ==================== 产品区 4：设备 Flocking Equipment ==================== -->
-<section class="section" id="equipment" style="background:var(--gray-light);">
+<!-- ================================================================
+   产品区 4：设备 Flocking Equipment
+   ================================================================ -->
+<section class="product-section alt" id="equipment">
   <div class="container">
-    <div class="product-detail">
-      <!-- 🔧 产品信息区 -->
-      <div class="product-info">
-        <h2>Flocking Equipment</h2>
-        <p>We help you source the right electrostatic flocking equipment for your production scale — from small manual units to automated production lines. As a trading company, we connect you with reliable equipment manufacturers and handle the procurement process.</p>
 
-        <ul class="specs">
-          <li><strong>Manual Flocking Machines:</strong> For small-batch production, sampling, and craft applications</li>
-          <li><strong>Semi-Automatic Lines:</strong> For medium-volume textile and packaging production</li>
-          <li><strong>Fully Automatic Lines:</strong> For high-volume automotive, flooring, and industrial applications</li>
-          <li><strong>Spare Parts &amp; Accessories:</strong> Electrostatic generators, hoppers, screens, and brushes</li>
-        </ul>
-      </div>
-      <!-- 🔧 产品图：替换 images/products/equipment.jpg -->
+    <div class="product-header">
+      <span class="product-icon">⚙️</span>
       <div>
-        <img src="images/products/equipment.jpg" alt="Flocking Equipment" style="background:#e8ecf0;min-height:280px;">
-        <p style="font-size:0.8rem;color:var(--gray);margin-top:8px;text-align:center;">Electrostatic flocking machines and equipment</p>
+        <h2>Flocking Equipment</h2>
+        <!-- 🔧 改产品一句描述 -->
+        <p>Electrostatic flocking machines from manual units to fully automatic production lines. We connect you with reliable manufacturers and manage procurement.</p>
       </div>
     </div>
+
+    <div class="product-body">
+      <!-- 🔧 主图：替换 images/products/equipment.jpg -->
+      <div class="product-gallery">
+        <img src="images/products/equipment.jpg" alt="Flocking Equipment">
+        <p class="gallery-caption">Electrostatic flocking machines and equipment</p>
+      </div>
+
+      <div class="product-details">
+        <h3>Equipment Range</h3>
+        <!-- 🔧 设备类型表 -->
+        <table class="spec-table">
+          <thead>
+            <tr><th>Type</th><th>Capacity</th><th>Best For</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Manual Flocking Machine</td><td>Small batch</td><td>Sampling, crafts, low-volume production</td></tr>
+            <tr><td>Semi-Automatic Line</td><td>Medium volume</td><td>Textile and packaging production</td></tr>
+            <tr><td>Fully Automatic Line</td><td>High volume</td><td>Automotive, flooring, industrial scale</td></tr>
+            <tr><td>Spare Parts &amp; Accessories</td><td>—</td><td>Generators, hoppers, screens, brushes</td></tr>
+          </tbody>
+        </table>
+
+        <div class="highlight-cards">
+          <div class="highlight-card">
+            <span class="hl-label">Source</span>
+            <span class="hl-value">Verified manufacturers</span>
+          </div>
+          <div class="highlight-card">
+            <span class="hl-label">Service</span>
+            <span class="hl-value">Procurement + Inspection</span>
+          </div>
+          <div class="highlight-card">
+            <span class="hl-label">Support</span>
+            <span class="hl-value">Installation guidance</span>
+          </div>
+        </div>
+
+        <a href="contact.html" class="btn btn-primary" style="margin-top:12px;">📧 Inquire About Equipment</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- ===== 底部 CTA ===== -->
+<!-- ==================== 底部 CTA（通用） ==================== -->
 <section class="section">
   <div class="container" style="text-align:center;">
     <h2 class="section-title">Don't See What You Need?</h2>
@@ -251,7 +382,7 @@
   </div>
 </section>
 
-<!-- ===== 页脚（共用） ===== -->
+<!-- ==================== 页脚（共用） ==================== -->
 <footer>
   <div class="container">
     <div class="footer-grid">
