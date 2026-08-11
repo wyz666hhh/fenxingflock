@@ -418,6 +418,21 @@ nav a:hover {
   background: var(--gray-light);   /* 斑马条纹 */
 }
 
+/* ---- Callout 提示框（产品页选型指南等） ---- */
+.callout-box {
+  background: #fef9f0;
+  border-left: 4px solid var(--accent);
+  padding: 14px 18px;
+  margin: 16px 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 0.9rem;
+  color: var(--gray-dark);
+  line-height: 1.65;
+}
+.callout-box strong {
+  color: var(--navy);
+}
+
 /* ============================================================
    📌 十一、Resources 页面（文章列表）
    ============================================================ */
