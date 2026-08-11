@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 🔧 SEO 描述 -->
   <meta name="description" content="Contact Fenxing Flock for flock fiber, adhesives, and flocking raw materials. Send an inquiry, request a quote, or reach us on WhatsApp. Based in Foshan, Guangdong, China.">
   <title>Contact Us — Get a Quote for Flock Fiber &amp; Raw Materials | Fenxing Flock</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- ===== 顶部导航栏（共用） ===== -->
 <header>
   <div class="container">
     <a href="index.html" class="logo">Fenxing<span>Flock</span></a>
-    <button class="nav-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')" aria-label="Menu">
+    <button class="nav-toggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
     <nav>
@@ -27,6 +29,7 @@
   </div>
 </header>
 
+<!-- ===== 页面顶部横幅 ===== -->
 <section class="page-banner">
   <div class="container">
     <h1>Contact Us</h1>
@@ -34,10 +37,12 @@
   </div>
 </section>
 
+<!-- ==================== 联系信息 + 询盘表单 ==================== -->
 <section class="section">
   <div class="container">
     <div class="contact-layout">
 
+      <!-- 🔧 左侧：联系信息 -->
       <div class="contact-info">
         <h2>Get in Touch</h2>
 
@@ -45,6 +50,7 @@
           <div class="icon">📧</div>
           <div>
             <h4>Email</h4>
+            <!-- 🔧 改邮箱地址 -->
             <p>info@fenxingflock.com</p>
           </div>
         </div>
@@ -53,6 +59,7 @@
           <div class="icon">📱</div>
           <div>
             <h4>WhatsApp / WeChat</h4>
+            <!-- 🔧 加电话/whatsapp 号 -->
             <p>Available upon request via email</p>
           </div>
         </div>
@@ -61,6 +68,7 @@
           <div class="icon">📍</div>
           <div>
             <h4>Address</h4>
+            <!-- 🔧 改公司地址 -->
             <p>Foshan, Guangdong, China</p>
           </div>
         </div>
@@ -74,8 +82,10 @@
         </div>
       </div>
 
+      <!-- 🔧 右侧：询盘表单 -->
       <div>
         <h2 style="font-size:1.55rem;color:var(--navy);margin-bottom:20px;">Send an Inquiry</h2>
+        <!-- 🔧 ⚠️ 重要：替换 action 里的 Formspree ID 为你的真实 ID -->
         <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
           <label for="name">Your Name *</label>
           <input type="text" id="name" name="name" required placeholder="Full name">
@@ -100,27 +110,34 @@
   </div>
 </section>
 
+<!-- ==================== FAQ 常见问题 ==================== -->
 <section style="background:var(--gray-light);">
   <div class="container section" style="text-align:center;">
     <h2 class="section-title">Frequently Asked Questions</h2>
     <div class="faq-section" style="text-align:left;max-width:700px;margin:0 auto;">
 
       <dl>
+        <!-- 🔧 FAQ 1：MOQ -->
         <dt>What is your minimum order quantity (MOQ)?</dt>
         <dd>For flock fibers, our standard MOQ is 50 kg per color. However, we are flexible with trial orders — contact us to discuss your needs. For adhesives and color pastes, MOQs start from 5-20 kg.</dd>
 
+        <!-- 🔧 FAQ 2：样品 -->
         <dt>Do you provide free samples?</dt>
         <dd>Yes, we can provide small samples for quality evaluation. Shipping costs for samples are usually covered by the buyer, but we'll deduct the sample cost from your first order.</dd>
 
+        <!-- 🔧 FAQ 3：物流时间 -->
         <dt>How long does shipping take?</dt>
         <dd>Depending on your location and shipping method: express (5-10 days), air freight (7-15 days), sea freight (15-30 days to Southeast Asia, 25-40 days to Middle East). We'll recommend the best option for your order size.</dd>
 
+        <!-- 🔧 FAQ 4：颜色定制 -->
         <dt>Can you match a specific color?</dt>
         <dd>Absolutely. Send us your color sample or Pantone code, and we'll match it. Custom color matching typically adds 3-5 days to production time.</dd>
 
+        <!-- 🔧 FAQ 5：付款方式 -->
         <dt>What payment methods do you accept?</dt>
         <dd>We accept T/T (bank transfer), PayPal for small orders, and other methods can be discussed. Standard terms are 30% deposit, 70% before shipment.</dd>
 
+        <!-- 🔧 FAQ 6：清关 -->
         <dt>Do you handle customs clearance?</dt>
         <dd>We handle export clearance in China. Import clearance at your destination is the buyer's responsibility — we'll provide all necessary documentation (commercial invoice, packing list, bill of lading, certificate of origin).</dd>
       </dl>
@@ -128,6 +145,7 @@
   </div>
 </section>
 
+<!-- ===== 页脚（共用） ===== -->
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -161,5 +179,6 @@
   </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>

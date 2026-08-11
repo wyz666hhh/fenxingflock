@@ -1,19 +1,31 @@
-/* ===== Color Variables ===== */
+/* ============================================================
+   Fenxing Flock — 全局样式表
+   配色：工业蓝灰（深蓝 #1a3655 / 钢蓝 #4a6d8c / 金色点缀 #c4953d）
+   适用：B2B 外贸官网，稳重专业风格
+   修改指南：改颜色改最上面的 CSS 变量即可全局生效
+   ============================================================ */
+
+/* ============================================================
+   📌 一、CSS 变量（配色/圆角等全局设置）
+   改颜色只需改这里，整个网站自动生效
+   ============================================================ */
 :root {
-  --navy: #1a3655;
-  --navy-light: #234b73;
-  --steel: #4a6d8c;
-  --steel-light: #7d9bb8;
-  --gray-dark: #333333;
-  --gray: #666666;
-  --gray-light: #f5f6f8;
+  --navy: #1a3655;           /* 主色-深蓝，用于 header/footer/标题 */
+  --navy-light: #234b73;     /* 浅蓝，hover 状态 */
+  --steel: #4a6d8c;          /* 钢蓝，次要元素 */
+  --steel-light: #7d9bb8;    /* 浅钢蓝 */
+  --gray-dark: #333333;      /* 正文深灰 */
+  --gray: #666666;           /* 正文中灰 */
+  --gray-light: #f5f6f8;     /* 背景浅灰，用于卡片/区域底色 */
   --white: #ffffff;
-  --accent: #c4953d;
-  --border: #e0e4e8;
-  --radius: 6px;
+  --accent: #c4953d;         /* 金色点缀，用于 logo 高亮/CTA 按钮 */
+  --border: #e0e4e8;         /* 边框色 */
+  --radius: 6px;             /* 全局圆角 */
 }
 
-/* ===== Reset ===== */
+/* ============================================================
+   📌 二、基础重置（不用改）
+   ============================================================ */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -21,7 +33,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;   /* 锚点平滑滚动 */
   font-size: 16px;
 }
 
@@ -49,7 +61,12 @@ a:hover {
   color: var(--accent);
 }
 
-/* ===== Utility ===== */
+/* ============================================================
+   📌 三、通用工具类
+   .container  → 页面内容居中容器（最大宽度 1100px）
+   .section    → 标准区块上下间距
+   .btn        → 按钮基础样式
+   ============================================================ */
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -57,9 +74,10 @@ a:hover {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 80px 0;           /* 每个区块的上下间距 */
 }
 
+/* 区块标题（居中大标题） */
 .section-title {
   font-size: 2rem;
   font-weight: 700;
@@ -68,6 +86,7 @@ a:hover {
   margin-bottom: 16px;
 }
 
+/* 区块副标题（标题下方灰色说明文字） */
 .section-subtitle {
   font-size: 1.05rem;
   color: var(--gray);
@@ -78,6 +97,7 @@ a:hover {
   margin-right: auto;
 }
 
+/* ---- 按钮 ---- */
 .btn {
   display: inline-block;
   padding: 12px 32px;
@@ -90,32 +110,35 @@ a:hover {
   border: 2px solid transparent;
 }
 
+/* 实心按钮（主 CTA） */
 .btn-primary {
   background: var(--navy);
   color: var(--white);
 }
-
 .btn-primary:hover {
   background: var(--navy-light);
   color: var(--white);
 }
 
+/* 空心按钮（次要 CTA） */
 .btn-outline {
   background: transparent;
   color: var(--navy);
   border-color: var(--navy);
 }
-
 .btn-outline:hover {
   background: var(--navy);
   color: var(--white);
 }
 
-/* ===== Header ===== */
+/* ============================================================
+   📌 四、Header（顶部导航栏）
+   固定在页面顶部，移动端自动折叠
+   ============================================================ */
 header {
   background: var(--navy);
   padding: 16px 0;
-  position: sticky;
+  position: sticky;          /* 滚动时吸顶 */
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
@@ -124,24 +147,25 @@ header {
 header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between;  /* logo 左，导航右 */
 }
 
+/* Logo */
 .logo {
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--white);
   letter-spacing: 0.5px;
 }
-
 .logo span {
-  color: var(--accent);
+  color: var(--accent);      /* "Flock" 用金色突出 */
 }
 
+/* 导航菜单 */
 nav ul {
   display: flex;
   list-style: none;
-  gap: 28px;
+  gap: 28px;                 /* 菜单项间距 */
 }
 
 nav a {
@@ -149,20 +173,18 @@ nav a {
   font-size: 0.95rem;
   font-weight: 500;
 }
-
 nav a:hover {
   color: var(--accent);
 }
 
-/* Mobile nav toggle */
+/* ---- 移动端汉堡菜单按钮 ---- */
 .nav-toggle {
-  display: none;
+  display: none;             /* 桌面端隐藏 */
   background: none;
   border: none;
   cursor: pointer;
   padding: 4px;
 }
-
 .nav-toggle span {
   display: block;
   width: 24px;
@@ -171,6 +193,7 @@ nav a:hover {
   margin: 5px 0;
 }
 
+/* 移动端：显示汉堡菜单，导航变为下拉式 */
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
@@ -187,11 +210,14 @@ nav a:hover {
     gap: 16px;
   }
   nav ul.active {
-    display: flex;
+    display: flex;           /* JS 切换此类来展开/收起 */
   }
 }
 
-/* ===== Hero ===== */
+/* ============================================================
+   📌 五、首页 Hero 区域
+   大标题 + 副标题 + 两个 CTA 按钮
+   ============================================================ */
 .hero {
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
   color: var(--white);
@@ -205,9 +231,8 @@ nav a:hover {
   margin-bottom: 20px;
   line-height: 1.3;
 }
-
 .hero h1 span {
-  color: var(--accent);
+  color: var(--accent);      /* 关键词用金色突出 */
 }
 
 .hero p {
@@ -229,7 +254,6 @@ nav a:hover {
   background: var(--accent);
   border-color: var(--accent);
 }
-
 .hero .btn-primary:hover {
   background: #d4a24a;
   border-color: #d4a24a;
@@ -239,12 +263,14 @@ nav a:hover {
   color: var(--white);
   border-color: rgba(255,255,255,0.6);
 }
-
 .hero .btn-outline:hover {
   background: rgba(255,255,255,0.1);
 }
 
-/* ===== Product Section on Home ===== */
+/* ============================================================
+   📌 六、首页产品卡片（What We Supply）
+   4 列网格，emoji 图标 + 标题 + 描述
+   ============================================================ */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -258,9 +284,8 @@ nav a:hover {
   text-align: center;
   transition: transform 0.25s, box-shadow 0.25s;
 }
-
 .product-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-4px);   /* 悬浮时微微上浮 */
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
 
@@ -281,7 +306,10 @@ nav a:hover {
   line-height: 1.6;
 }
 
-/* ===== Why Us ===== */
+/* ============================================================
+   📌 七、首页 Why Work With Us
+   4 列优势展示
+   ============================================================ */
 .why-us {
   background: var(--gray-light);
 }
@@ -313,7 +341,9 @@ nav a:hover {
   color: var(--gray);
 }
 
-/* ===== About Page ===== */
+/* ============================================================
+   📌 八、内页顶部横幅（Products / About / Resources / Contact）
+   ============================================================ */
 .page-banner {
   background: var(--gray-light);
   padding: 60px 0;
@@ -325,6 +355,10 @@ nav a:hover {
   color: var(--navy);
 }
 
+/* ============================================================
+   📌 九、About Us 页面
+   左图右文布局，移动端上下堆叠
+   ============================================================ */
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -350,11 +384,14 @@ nav a:hover {
 
 @media (max-width: 768px) {
   .about-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;   /* 手机端单列 */
   }
 }
 
-/* ===== Products Page ===== */
+/* ============================================================
+   📌 十、Products 页面
+   每个产品一行：左图右文（交替），含规格表格
+   ============================================================ */
 .product-detail {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -387,6 +424,7 @@ nav a:hover {
   font-size: 0.95rem;
 }
 
+/* 产品规格列表 */
 .product-info .specs {
   list-style: none;
   margin-bottom: 20px;
@@ -406,11 +444,11 @@ nav a:hover {
 
 @media (max-width: 768px) {
   .product-detail {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;   /* 手机端单列 */
   }
 }
 
-/* ===== Spec Table ===== */
+/* ---- 规格对比表格（产品页 & 文章页共用） ---- */
 .spec-table {
   width: 100%;
   border-collapse: collapse;
@@ -432,15 +470,18 @@ nav a:hover {
 }
 
 .spec-table tr:nth-child(even) {
-  background: var(--gray-light);
+  background: var(--gray-light);   /* 斑马条纹 */
 }
 
-/* ===== Resources Page ===== */
+/* ============================================================
+   📌 十一、Resources 页面（文章列表）
+   ============================================================ */
 .article-list {
   display: grid;
   gap: 32px;
 }
 
+/* 每篇文章卡片：左缩略图 + 右信息 */
 .article-card {
   display: grid;
   grid-template-columns: 240px 1fr;
@@ -450,7 +491,6 @@ nav a:hover {
   border-radius: var(--radius);
   transition: box-shadow 0.25s;
 }
-
 .article-card:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
@@ -484,10 +524,11 @@ nav a:hover {
 
 @media (max-width: 768px) {
   .article-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;    /* 手机端单列 */
   }
 }
 
+/* ---- 文章正文样式（articles/ 下的文章页面共用） ---- */
 .article-full {
   max-width: 750px;
   margin: 0 auto;
@@ -498,7 +539,6 @@ nav a:hover {
   color: var(--navy);
   margin: 30px 0 14px;
 }
-
 .article-full h2:first-of-type {
   margin-top: 0;
 }
@@ -533,6 +573,7 @@ nav a:hover {
   border-bottom: 1px solid var(--border);
 }
 
+/* ---- FAQ 区块（文章页 & 联系页共用） ---- */
 .faq-section {
   background: var(--gray-light);
   padding: 28px;
@@ -558,7 +599,10 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-/* ===== Contact Page ===== */
+/* ============================================================
+   📌 十二、Contact 页面
+   左联系信息 + 右询盘表单
+   ============================================================ */
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -571,6 +615,7 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
+/* 联系方式条目（图标+文字） */
 .contact-item {
   display: flex;
   gap: 14px;
@@ -594,6 +639,7 @@ nav a:hover {
   color: var(--gray);
 }
 
+/* ---- 询盘表单 ---- */
 .contact-form label {
   display: block;
   font-weight: 600;
@@ -622,11 +668,14 @@ nav a:hover {
 
 @media (max-width: 768px) {
   .contact-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;    /* 手机端单列 */
   }
 }
 
-/* ===== Footer ===== */
+/* ============================================================
+   📌 十三、Footer（页脚）
+   4 列：品牌 / 产品 / 链接 / 联系
+   ============================================================ */
 footer {
   background: var(--navy);
   color: rgba(255,255,255,0.75);
@@ -657,6 +706,7 @@ footer {
   color: var(--accent);
 }
 
+/* 底部版权条 */
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.15);
   padding-top: 20px;
@@ -664,7 +714,182 @@ footer {
   font-size: 0.85rem;
 }
 
-/* ===== Responsive ===== */
+/* ============================================================
+   📌 十四、色卡画廊（Tab 切换 + 网格缩略图）
+   用于产品页展示绒毛色卡，按材质分类
+   ============================================================ */
+
+/* ---- Tab 标签栏 ---- */
+.swatch-tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 0;
+  border-bottom: 2px solid var(--border);
+}
+
+/* 🔧 每个 Tab 按钮 */
+.swatch-tab {
+  padding: 10px 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--gray);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;       /* 覆盖父级 border-bottom */
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.swatch-tab:hover {
+  color: var(--navy);
+}
+/* 当前选中的 Tab */
+.swatch-tab.active {
+  color: var(--navy);
+  border-bottom-color: var(--navy);
+}
+
+/* ---- 色卡网格（每个 Tab 对应一个面板） ---- */
+.swatch-panel {
+  display: none;             /* 默认隐藏 */
+  padding: 20px 0;
+}
+.swatch-panel.active {
+  display: block;            /* JS 切换显示 */
+}
+
+/* 网格容器：每行 4 张 */
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* 🔧 每张色卡缩略图 */
+.swatch-item {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: var(--white);
+}
+.swatch-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+.swatch-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;       /* 保持统一比例 */
+  object-fit: cover;
+  display: block;
+}
+/* 色卡下方的标签 */
+.swatch-label {
+  padding: 8px 10px;
+  font-size: 0.82rem;
+  color: var(--navy);
+  text-align: center;
+  font-weight: 500;
+  background: var(--gray-light);
+}
+
+/* 移动端：每行 2 张 */
+@media (max-width: 768px) {
+  .swatch-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .swatch-tab {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+/* ============================================================
+   📌 十五、灯箱（Lightbox）—— 点击色卡弹出大图
+   ============================================================ */
+
+/* 灯箱遮罩层 */
+.lightbox {
+  display: none;             /* 默认隐藏 */
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.lightbox.open {
+  display: flex;             /* JS 打开时添加 .open */
+}
+
+/* 灯箱中的大图 */
+.lightbox img {
+  max-width: 90vw;
+  max-height: 75vh;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+/* 灯箱中的标题 */
+.lightbox-caption {
+  color: var(--white);
+  margin-top: 16px;
+  font-size: 0.95rem;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* 关闭按钮（右上角 ✕） */
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  color: var(--white);
+  font-size: 2rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: opacity 0.2s;
+  z-index: 1;
+}
+.lightbox-close:hover {
+  opacity: 0.7;
+}
+
+/* 左右切换按钮 */
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--white);
+  font-size: 2.5rem;
+  cursor: pointer;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  padding: 16px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(255,255,255,0.25);
+}
+.lightbox-prev { left: 16px; }
+.lightbox-next { right: 16px; }
+
+@media (max-width: 768px) {
+  .lightbox-prev, .lightbox-next {
+    font-size: 1.8rem;
+    padding: 10px 8px;
+  }
+}
+
+/* ============================================================
+   📌 十六、移动端适配
+   ============================================================ */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 1.8rem;
