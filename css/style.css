@@ -389,8 +389,7 @@ nav a:hover {
 }
 
 /* ============================================================
-   📌 十、Products 页面（见 十六、产品页新布局）
-   旧样式已迁移，此处保留注释以防追溯
+   📌 十、共享组件（多页面复用）
    ============================================================ */
 
 /* ---- 规格对比表格（产品页 & 文章页共用） ---- */
@@ -418,7 +417,7 @@ nav a:hover {
   background: var(--gray-light);   /* 斑马条纹 */
 }
 
-/* ---- Callout 提示框（产品页选型指南等） ---- */
+/* ---- Callout 提示框（产品页选型指南、设备采购说明等） ---- */
 .callout-box {
   background: #fef9f0;
   border-left: 4px solid var(--accent);
@@ -515,23 +514,7 @@ nav a:hover {
   line-height: 1.8;
 }
 
-.article-full table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-}
-
-.article-full th {
-  background: var(--navy);
-  color: var(--white);
-  padding: 10px 14px;
-  text-align: left;
-}
-
-.article-full td {
-  padding: 10px 14px;
-  border-bottom: 1px solid var(--border);
-}
+/* 文章内表格使用 .spec-table，无需额外样式 */
 
 /* ---- FAQ 区块（文章页 & 联系页共用） ---- */
 .faq-section {
