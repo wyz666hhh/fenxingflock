@@ -1,3 +1,8 @@
+
+
+
+
+
 /**
  * Fenxing Flock — 全局 JavaScript
  * =====================================
@@ -6,6 +11,7 @@
  *   2. 页面内锚点链接的平滑滚动
  *   3. 色卡画廊：Tab 标签切换材质
  *   4. 色卡画廊：点击缩略图弹出灯箱大图
+ *   5. 产品导航滚动高亮（Scroll Spy）
  *
  * 修改指南：
  *   - 所有页面共用这一个 JS 文件，改一处全站生效
@@ -108,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
       collectSwatchItems();                     // 刷新图片列表
       currentIndex = index;                     // 记录当前索引
       var fullSrc = this.getAttribute('data-full');
+      if (!fullSrc) return;                        // 占位图不触发灯箱
       var caption = this.getAttribute('data-caption') || '';
       openLightbox(fullSrc, caption);
     });
