@@ -1,8 +1,8 @@
 # Fenxing Flock — 海外官网
 
-佛山分形新材料有限公司（**Foshan Fenxing Materials Co., Ltd.**）海外官网。
+佛山分形科技有限公司（**Foshan Fenxing Technology Co., Ltd.**）海外官网。
 
-B2B 植绒原材料贸易公司，主营 **绒毛（Flock Fiber）**，附带粘合剂、色浆、植绒设备。品牌名 **Fenxing Flock**。
+B2B 植绒材料供应链服务商，提供 **色浆、绒毛、粘合剂、化工原料、植绒设备** 的一站式采购。品牌名 **Fenxing Flock**。
 
 - **线上地址**：https://fenxingflock.com
 - **托管**：GitHub Pages（仓库 `wyz666hhh/fenxingflock`，`master` 分支）
@@ -30,8 +30,8 @@ B2B 植绒原材料贸易公司，主营 **绒毛（Flock Fiber）**，附带粘
 ```
 website/
 ├── index.html              ← 首页（Hero + 产品概览 + 优势 + CTA）
-├── products.html           ← 产品页（绒毛/粘合剂/色浆/设备，含色卡画廊）
-├── about.html              ← 关于我们（公司介绍 + 工作流程）
+├── products.html           ← 产品页（绒毛/粘合剂/色浆/化工原料/设备，含色卡画廊）
+├── about.html              ← 关于我们（介绍 + 使命愿景 + 制造工序 + 合作流程）
 ├── resources.html          ← 行业知识 / 文章列表
 ├── contact.html            ← 联系我们（WhatsApp 直聊 + FAQ）
 ├── CNAME                   ← 自定义域名，勿删
@@ -110,7 +110,7 @@ website/
 网站三处结构化数据，AI 搜索引擎（GEO）靠它理解内容：
 
 - **首页** `index.html`：`Organization`（含电话 `contactPoint`）
-- **产品页** `products.html`：`ItemList` + 4 个 `Product`
+- **产品页** `products.html`：`ItemList` + 5 个 `Product`
 - **文章页** `articles/*.html`：`Article`（含 `headline` / `datePublished`）
 
 ---
