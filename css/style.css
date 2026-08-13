@@ -159,6 +159,18 @@ a:hover {
   color: var(--white);
 }
 
+/* WhatsApp 绿色按钮（联系页 / 全局即时聊天 CTA） */
+.btn-whatsapp {
+  background: #25d366;
+  color: #fff;
+  border-color: #25d366;
+}
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+  border-color: #1ebe5d;
+  color: #fff;
+}
+
 /* ============================================================
    📌 四、Header（顶部导航栏）
    固定在页面顶部，移动端自动折叠
@@ -608,6 +620,20 @@ nav a:hover {
 .contact-item p {
   font-size: 0.93rem;
   color: var(--gray);
+}
+
+/* 联系方式条目下方的小字说明 */
+.contact-note {
+  font-size: 0.82rem;
+  color: var(--steel-light);
+  margin-top: 2px;
+}
+
+/* 联系页右侧 CTA 卡片（邮箱/表单未启用时使用） */
+.contact-cta {
+  background: var(--gray-light);
+  border-radius: var(--radius);
+  padding: 32px 28px;
 }
 
 /* ---- 询盘表单 ---- */
