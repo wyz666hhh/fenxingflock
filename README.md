@@ -33,7 +33,7 @@ website/
 ├── products.html           ← 产品页（绒毛/粘合剂/色浆/设备，含色卡画廊）
 ├── about.html              ← 关于我们（公司介绍 + 工作流程）
 ├── resources.html          ← 行业知识 / 文章列表
-├── contact.html            ← 联系我们（WhatsApp 直聊 + 微信 + FAQ）
+├── contact.html            ← 联系我们（WhatsApp 直聊 + FAQ）
 ├── CNAME                   ← 自定义域名，勿删
 ├── README.md               ← 本文件
 │
@@ -125,7 +125,7 @@ website/
 | 交互行为 | `js/main.js`（文件头有功能清单） |
 | 产品图 | `images/products/`（保持文件名不变） |
 | 色卡图 | `images/products/全消光尼龙/` 等子目录 |
-| 联系方式（电话/微信） | 全站 header/footer/contact 页，全局搜索替换 |
+| 联系方式（电话） | 全站 header/footer/contact 页，全局搜索替换 |
 
 **本地预览**：直接用浏览器打开 `index.html` 即可，无需起服务器。
 
@@ -136,6 +136,6 @@ website/
 ## 待办事项
 
 - [ ] 改性涤纶（Modified Polyester）色卡：目前是 6 个占位色块（`products.html` 的 `#swatch-modpoly`），待补实拍图
-- [ ] 邮箱/询盘表单：当前联系页只有 WhatsApp/微信，邮箱 `info@fenxingflock.com` 待开通后恢复表单（`css/style.css` 里的 `.contact-form` 样式已保留，随时可启用）
+- [ ] 邮箱/询盘表单：当前联系页只有 WhatsApp，邮箱 `info@fenxingflock.com` 待开通后恢复表单（`css/style.css` 里的 `.contact-form` 样式已保留，随时可启用）
 - [ ] GEO 文章：规划 12 篇，已完成 4 篇，剩余 8 篇（节奏：一天两篇）
 - [ ] 平台注册：LinkedIn 公司主页、Made-in-China.com 免费版
