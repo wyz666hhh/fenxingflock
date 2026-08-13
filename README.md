@@ -40,6 +40,10 @@ website/
 ├── css/
 │   └── style.css           ← 全局样式（17 段，按主题分区）
 │
+├── fonts/                  ← 自托管字体（Poppins + Open Sans woff2，国内外都快）
+│   ├── poppins-*.woff2
+│   └── open-sans-*.woff2
+│
 ├── js/
 │   └── main.js             ← 全局交互（5 个功能，见文件头注释）
 │
@@ -67,18 +71,18 @@ website/
 
 | CSS 变量 | 色值 | 用途 |
 |---|---|---|
-| `--navy` | `#1a3655` | 主色-深蓝（header/footer/标题/按钮） |
-| `--navy-light` | `#234b73` | 浅蓝（hover 状态） |
-| `--steel` | `#4a6d8c` | 钢蓝（次要元素、链接） |
-| `--steel-light` | `#7d9bb8` | 浅钢蓝（小字说明） |
-| `--accent` | `#c4953d` | 金色点缀（logo 高亮/CTA） |
-| `--gray-dark` | `#333333` | 正文深灰 |
-| `--gray` | `#666666` | 正文中灰 |
-| `--gray-light` | `#f5f6f8` | 背景浅灰（卡片/区块底色） |
-| `--border` | `#e0e4e8` | 边框色 |
+| `--navy` | `#0f172a` | 主色-专业深蓝（header/footer/标题/按钮） |
+| `--navy-light` | `#1e293b` | 深蓝 hover（slate-800） |
+| `--steel` | `#334155` | 石板蓝（次要元素、链接） |
+| `--steel-light` | `#94a3b8` | 浅石板蓝（小字说明） |
+| `--accent` | `#0369a1` | 强调蓝（logo 高亮/CTA） |
+| `--gray-dark` | `#020617` | 正文深色 |
+| `--gray` | `#64748b` | 正文中灰 |
+| `--gray-light` | `#f8fafc` | 背景浅色（卡片/区块底色） |
+| `--border` | `#e2e8f0` | 边框色 |
 | `--radius` | `6px` | 全局圆角 |
 
-整体风格：**工业蓝灰 + 金色点缀**，稳重专业（B2B 外贸）。
+整体风格：**专业深蓝 + 蓝色 CTA**，稳重专业（B2B 外贸）。
 
 ---
 
