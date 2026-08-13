@@ -4,7 +4,8 @@
 
 
 /**
- * Fenxing Flock — 全局 JavaScript
+
+* Fenxing Flock — 全局 JavaScript
  * =====================================
  * 功能清单：
  *   1. 移动端汉堡菜单的展开/收起
