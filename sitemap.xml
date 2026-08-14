@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ===== 核心页面 ===== -->
+  <url>
+    <loc>https://fenxingflock.com/</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://fenxingflock.com/products.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://fenxingflock.com/about.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fenxingflock.com/contact.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fenxingflock.com/resources.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ===== GEO 文章（6 篇） ===== -->
+  <url>
+    <loc>https://fenxingflock.com/articles/what-is-flock-fiber.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fenxingflock.com/articles/nylon-vs-rayon-vs-polyester-flock-fiber.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fenxingflock.com/articles/how-to-import-flock-fiber-from-china.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fenxingflock.com/articles/understanding-flock-fiber-specifications.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fenxingflock.com/articles/complete-guide-to-flocking-adhesives.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fenxingflock.com/articles/flocking-in-automotive-interiors.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
