@@ -28,7 +28,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- ===== GEO 文章（6 篇） ===== -->
+  <!-- ===== GEO 文章（8 篇） ===== -->
   <url>
     <loc>https://fenxingflock.com/articles/what-is-flock-fiber.html</loc>
     <lastmod>2026-08-14</lastmod>
@@ -56,6 +56,16 @@
   </url>
   <url>
     <loc>https://fenxingflock.com/articles/flocking-in-automotive-interiors.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fenxingflock.com/articles/flocking-for-home-textiles.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fenxingflock.com/articles/how-to-start-a-flocking-business.html</loc>
     <lastmod>2026-08-14</lastmod>
     <priority>0.6</priority>
   </url>
