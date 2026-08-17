@@ -28,7 +28,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- ===== GEO 文章（10 篇） ===== -->
+  <!-- ===== GEO 文章（12 篇） ===== -->
   <url>
     <loc>https://fenxingflock.com/articles/what-is-flock-fiber.html</loc>
     <lastmod>2026-08-14</lastmod>
@@ -77,6 +77,16 @@
   <url>
     <loc>https://fenxingflock.com/articles/flocking-color-paste-guide.html</loc>
     <lastmod>2026-08-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fenxingflock.com/articles/eco-friendly-flocking-guide.html</loc>
+    <lastmod>2026-08-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fenxingflock.com/articles/flocking-equipment-guide.html</loc>
+    <lastmod>2026-08-17</lastmod>
     <priority>0.6</priority>
   </url>
 

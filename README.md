@@ -36,7 +36,7 @@ website/
 ├── contact.html            ← 联系我们（WhatsApp 直聊 + FAQ）
 ├── CNAME                   ← 自定义域名，勿删
 ├── README.md               ← 本文件
-├── sitemap.xml             ← 站点地图（15 个 URL：5 页面 + 10 文章）
+├── sitemap.xml             ← 站点地图（17 个 URL：5 页面 + 12 文章）
 ├── robots.txt              ← 搜索引擎爬虫规则
 │
 ├── css/
@@ -58,7 +58,7 @@ website/
 │   ├── company/            ← 公司照片（about-us / warehouse）
 │   └── articles/           ← 文章配图（缩略图）
 │
-└── articles/               ← GEO 技术文章（每篇含 JSON-LD，共 10 篇）
+└── articles/               ← GEO 技术文章（每篇含 JSON-LD，共 12 篇）
     ├── what-is-flock-fiber.html
     ├── nylon-vs-rayon-vs-polyester-flock-fiber.html
     ├── how-to-import-flock-fiber-from-china.html
@@ -68,7 +68,9 @@ website/
     ├── flocking-for-home-textiles.html
     ├── how-to-start-a-flocking-business.html
     ├── flock-fiber-quality-inspection-guide.html
-    └── flocking-color-paste-guide.html
+    ├── flocking-color-paste-guide.html
+    ├── eco-friendly-flocking-guide.html
+    └── flocking-equipment-guide.html
 ```
 
 ---
@@ -148,5 +150,5 @@ website/
 ## 待办事项
 
 - [ ] 改性涤纶（Modified Polyester）色卡：目前是 6 个占位色块（`products.html` 的 `#swatch-modpoly`），待补实拍图
-- [ ] GEO 文章：规划 12 篇，已完成 10 篇，剩余 2 篇（环保 / 设备）（节奏：一天两篇）
+- [x] GEO 文章：规划 12 篇，已全部完成（2026-08-17 补环保 / 设备两篇）
 - [ ] 平台注册：LinkedIn 公司主页、Made-in-China.com 免费版
