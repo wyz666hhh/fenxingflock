@@ -898,9 +898,6 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
 }
-.swatch-grid-mt {
-  margin-top: 16px;
-}
 
 /* 🔧 每张色卡缩略图 */
 .swatch-item {
@@ -929,28 +926,6 @@ footer {
   text-align: center;
   font-weight: 500;
   background: var(--gray-light);
-}
-
-/* 占位色卡（无实图时用） */
-.swatch-placeholder {
-  cursor: default;
-  border: 2px dashed var(--border);
-}
-.swatch-placeholder:hover {
-  transform: none;
-  box-shadow: none;
-  border-color: var(--accent);
-}
-.placeholder-swatch {
-  height: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #e8ecf1 0%, #dce1e8 100%);
-  color: var(--navy);
-  font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
 }
 
 /* 移动端：每行 2 张 */
