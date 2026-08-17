@@ -95,7 +95,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function collectSwatchItems() {
     swatchItems = [];
-    document.querySelectorAll('.swatch-item').forEach(function (item) {
+    // 只在当前激活的 Tab 面板内收集，避免「上/下一张」跨材质循环
+    var activePanel = document.querySelector('.swatch-panel.active');
+    var scope = activePanel || document;
+    scope.querySelectorAll('.swatch-item').forEach(function (item) {
       swatchItems.push({
         src: item.getAttribute('data-full'),
         caption: item.getAttribute('data-caption') || ''
@@ -104,12 +107,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // 4b. 点击缩略图 → 打开灯箱
-  document.querySelectorAll('.swatch-item').forEach(function (item, index) {
+  document.querySelectorAll('.swatch-item').forEach(function (item) {
     item.addEventListener('click', function () {
-      collectSwatchItems();                     // 刷新图片列表
-      currentIndex = index;                     // 记录当前索引
+      collectSwatchItems();                     // 刷新图片列表（当前 Tab 内）
       var fullSrc = this.getAttribute('data-full');
       if (!fullSrc) return;                        // 占位图不触发灯箱
+      currentIndex = 0;                            // 在当前面板内定位索引
+      for (var i = 0; i < swatchItems.length; i++) {
+        if (swatchItems[i].src === fullSrc) { currentIndex = i; break; }
+      }
       var caption = this.getAttribute('data-caption') || '';
       openLightbox(fullSrc, caption);
     });
