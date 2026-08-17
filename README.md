@@ -19,7 +19,7 @@ B2B 植绒材料供应链服务商，提供 **色浆、绒毛、粘合剂、化�
 | 结构 | HTML5 | 语义化标签，页面模板统一 |
 | 样式 | 原生 CSS | CSS 变量驱动主题，改色只需改 `:root` |
 | 交互 | 原生 JavaScript | ES5 风格，全站共用一个 `main.js` |
-| 搜索优化 | JSON-LD | Organization / Article / Product 结构化数据 |
+| 搜索优化 | JSON-LD | Organization / ItemList / AboutPage / ContactPage / CollectionPage / Article 六类结构化数据 |
 
 > 这个站刻意保持"零依赖"——不需要 `npm install`、不需要编译。任何能编辑文本的开发者都能直接上手。
 
@@ -56,7 +56,7 @@ website/
 │   │   ├── 粘胶/            ← Viscose Rayon 纹理效果（15 种）
 │   │   └── _originals/     ← 原图备份（已 gitignore，不进仓库）
 │   ├── company/            ← 公司照片（about-us / warehouse）
-│   └── articles/           ← 文章配图（缩略图）
+│   └── articles/           ← 文章配图（列表缩略图 + 正文 hero 图）
 │
 └── articles/               ← GEO 技术文章（每篇含 JSON-LD，共 12 篇）
     ├── what-is-flock-fiber.html
@@ -121,11 +121,14 @@ website/
 
 ### JSON-LD 规范
 
-网站三处结构化数据，AI 搜索引擎（GEO）靠它理解内容：
+网站六类结构化数据，AI 搜索引擎（GEO）靠它理解内容：
 
 - **首页** `index.html`：`Organization`（含电话 `contactPoint`）
 - **产品页** `products.html`：`ItemList` + 5 个 `Product`
-- **文章页** `articles/*.html`：`Article`（含 `headline` / `datePublished`）
+- **关于页** `about.html`：`AboutPage`（`mainEntity` 指向 Organization）
+- **联系页** `contact.html`：`ContactPage`（含 email / 电话 / 地址）
+- **资源页** `resources.html`：`CollectionPage`（`hasPart` 列出 12 篇文章）
+- **文章页** `articles/*.html`：`Article`（含 `headline` / `datePublished`，共 12 篇）
 
 ---
 
@@ -149,6 +152,8 @@ website/
 
 ## 待办事项
 
-- [ ] 改性涤纶（Modified Polyester）色卡：目前是 6 个占位色块（`products.html` 的 `#swatch-modpoly`），待补实拍图
-- [x] GEO 文章：规划 12 篇，已全部完成（2026-08-17 补环保 / 设备两篇）
+- [ ] 改性涤纶（Modified Polyester）色卡：待补实拍图（6 规格 1.5D / 3.0D / 6.0D / 15D / 30D / Custom）
+- [ ] 产品主图：flock-fiber / adhesive / color-paste / equipment / chemicals 现为占位图，待换真图
+- [ ] 首页产品卡：现为 SVG 图标，待补真实产品图提升「专业感」
+- [x] GEO 文章：规划 12 篇，已全部完成，正文已补 hero 配图
 - [ ] 平台注册：LinkedIn 公司主页、Made-in-China.com 免费版

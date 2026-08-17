@@ -661,6 +661,15 @@ nav a.active {
   line-height: 1.8;
 }
 
+/* 文章正文 hero 配图（引言后全宽图，真图到位可替换） */
+.article-hero {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  display: block;
+  margin: 0 0 24px;
+}
+
 /* 文章内表格使用 .spec-table，无需额外样式 */
 
 /* ---- FAQ 区块（文章页 & 联系页共用） ---- */
