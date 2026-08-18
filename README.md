@@ -2,7 +2,7 @@
 
 佛山分形科技有限公司（**Foshan Fenxing Technology Co., Ltd.**）海外官网。
 
-B2B 植绒材料供应链服务商，提供 **色浆、绒毛、粘合剂、化工原料、植绒设备** 的一站式采购。品牌名 **Fenxing Flock**。
+B2B 植绒材料供应链服务商，提供 **色浆、绒毛、丝束、粘合剂、化工原料、植绒设备** 的一站式采购。品牌名 **Fenxing Flock**。
 
 - **线上地址**：https://fenxingflock.com
 - **托管**：GitHub Pages（仓库 `wyz666hhh/fenxingflock`，`master` 分支）
@@ -30,7 +30,7 @@ B2B 植绒材料供应链服务商，提供 **色浆、绒毛、粘合剂、化�
 ```
 website/
 ├── index.html              ← 首页（Hero + 产品概览 + 优势 + CTA）
-├── products.html           ← 产品页（绒毛/粘合剂/色浆/化工原料/设备，含色卡画廊）
+├── products.html           ← 产品页（绒毛/丝束/粘合剂/色浆/化工原料/设备，含色卡画廊）
 ├── about.html              ← 关于我们（介绍 + 使命愿景 + 制造工序 + 合作流程）
 ├── resources.html          ← 行业知识 / 文章列表
 ├── contact.html            ← 联系我们（WhatsApp 直聊 + FAQ）
@@ -50,7 +50,8 @@ website/
 │   └── main.js             ← 全局交互（5 个功能，见文件头注释）
 │
 ├── images/
-│   ├── products/           ← 产品主图（flock-fiber/adhesive/color-paste/equipment）
+│   ├── products/           ← 产品主图（flock-fiber/fiber-tow/adhesive/color-paste/chemicals/equipment）
+│   │   ├── fiber-tow/      ← Fiber Tow 丝束实拍图（白×3 / 黑×1，不标具体料）
 │   │   ├── 全消光尼龙/      ← Full Dull Nylon 色卡（JBN / MFN 系列）
 │   │   ├── 半消光尼龙/      ← Semi Dull Nylon 色卡（TFN 系列）
 │   │   ├── 粘胶/            ← Viscose Rayon 纹理效果（15 种）
@@ -124,7 +125,7 @@ website/
 网站六类结构化数据，AI 搜索引擎（GEO）靠它理解内容：
 
 - **首页** `index.html`：`Organization`（含电话 `contactPoint`）
-- **产品页** `products.html`：`ItemList` + 5 个 `Product`
+- **产品页** `products.html`：`ItemList` + 6 个 `Product`
 - **关于页** `about.html`：`AboutPage`（`mainEntity` 指向 Organization）
 - **联系页** `contact.html`：`ContactPage`（含 email / 电话 / 地址）
 - **资源页** `resources.html`：`CollectionPage`（`hasPart` 列出 12 篇文章）
@@ -152,6 +153,7 @@ website/
 
 ## 待办事项
 
+- [x] Fiber Tow（丝束）：2026-08-18 已上线（第 6 类产品，4 张实拍图已用）
 - [ ] 改性涤纶（Modified Polyester）色卡：待补实拍图（6 规格 1.5D / 3.0D / 6.0D / 15D / 30D / Custom）
 - [ ] 产品主图：flock-fiber / adhesive / color-paste / equipment / chemicals 现为占位图，待换真图
 - [ ] 首页产品卡：现为 SVG 图标，待补真实产品图提升「专业感」
