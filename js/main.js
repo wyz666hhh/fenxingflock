@@ -93,12 +93,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var swatchItems = [];          // [{src, caption}]
   var currentIndex = 0;          // 当前显示的图片索引
 
-  function collectSwatchItems() {
+  function collectSwatchItems(scope) {
     swatchItems = [];
-    // 只在当前激活的 Tab 面板内收集，避免「上/下一张」跨材质循环
-    var activePanel = document.querySelector('.swatch-panel.active');
-    var scope = activePanel || document;
-    scope.querySelectorAll('.swatch-item').forEach(function (item) {
+    // 在点击的缩略图所属网格内收集，避免「上/下一张」跨材质/跨产品循环
+    var container = scope || document.querySelector('.swatch-panel.active') || document;
+    container.querySelectorAll('.swatch-item').forEach(function (item) {
       swatchItems.push({
         src: item.getAttribute('data-full'),
         caption: item.getAttribute('data-caption') || ''
@@ -109,10 +108,11 @@ document.addEventListener('DOMContentLoaded', function () {
   // 4b. 点击缩略图 → 打开灯箱
   document.querySelectorAll('.swatch-item').forEach(function (item) {
     item.addEventListener('click', function () {
-      collectSwatchItems();                     // 刷新图片列表（当前 Tab 内）
       var fullSrc = this.getAttribute('data-full');
       if (!fullSrc) return;                        // 占位图不触发灯箱
-      currentIndex = 0;                            // 在当前面板内定位索引
+      var grid = this.closest('.swatch-grid') || this.closest('.swatch-panel');
+      collectSwatchItems(grid);                    // 刷新图片列表（当前网格内）
+      currentIndex = 0;                            // 在网格内定位索引
       for (var i = 0; i < swatchItems.length; i++) {
         if (swatchItems[i].src === fullSrc) { currentIndex = i; break; }
       }
