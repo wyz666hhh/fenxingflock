@@ -130,6 +130,7 @@ website/
 - 自动识别访客语言（`navigator.language` 以 `zh` 开头 → 默认中文），手动切换写入 `localStorage` 记住。
 - **改文案时记得同步补 `data-zh`**，否则中文访客会看到那段英文。
 - **范围**：仅 5 个主页面翻译；`articles/` 下 12 篇英文文章保持英文（海外 GEO 内容）。同 URL 切换，不做中文 SEO / hreflang。
+- **查漏脚本**：改完文案跑 `node check-i18n.js`，会自动列出「有英文但漏了 data-zh」的地方（输出为空 = 无遗漏）。
 
 ### JSON-LD 规范
 
