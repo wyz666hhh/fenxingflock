@@ -47,7 +47,7 @@ website/
 │   └── open-sans-*.woff2
 │
 ├── js/
-│   └── main.js             ← 全局交互（5 个功能，见文件头注释）
+│   └── main.js             ← 全局交互（6 个功能：菜单/平滑滚动/色卡/灯箱/导航高亮/中英切换）
 │
 ├── images/
 │   ├── products/           ← 产品主图（flock-fiber/fiber-tow/adhesive/color-paste/chemicals/equipment）
@@ -104,7 +104,7 @@ website/
 每个页面的骨架完全一致，改一个页面时**保持与其他页面同步**：
 
 1. `<head>`：`<meta charset>` → `viewport` → `description` → `<title>` → 样式表 →（可选）JSON-LD
-2. `<header>`：导航栏（5 个链接，Home/Products/About/Resources/Contact）
+2. `<header>`：导航栏（5 个链接，Home/Products/About/Resources/Contact）+ 中英切换按钮（`.lang-toggle`）
 3. `.page-banner`：页面标题横幅
 4. 正文 `<section>`
 5. `<footer>`：4 列页脚（品牌/产品/快速链接/联系方式）
@@ -119,6 +119,17 @@ website/
 3. 正文用 `.article-full` 容器，表格统一用 `.spec-table` 类
 4. 在 `resources.html` 的 `.article-list` 里复制一个 `.article-card` 块，改标题/摘要/链接
 5. 缩略图放到 `images/articles/`（或继续用 `img-placeholder` 类占位）
+
+### 中英切换（EN ↔ 中文）
+
+页眉右侧「中文 / EN」胶囊按钮，点一下全页英文↔中文。**中文是人工校对译文，不是浏览器机翻。**
+
+- 每个可翻译元素加 `data-zh="中文译文"` 属性，**英文仍写在标签里作为默认内容**（对 SEO / 海外访客友好）。
+- 表单占位符用 `data-zh-placeholder`，图片 alt 用 `data-zh-alt`。
+- JS 首次切中文时把英文原文快照到 `data-en`，切回英文时还原——所以 `<span>` 高亮等嵌套结构不会丢。
+- 自动识别访客语言（`navigator.language` 以 `zh` 开头 → 默认中文），手动切换写入 `localStorage` 记住。
+- **改文案时记得同步补 `data-zh`**，否则中文访客会看到那段英文。
+- **范围**：仅 5 个主页面翻译；`articles/` 下 12 篇英文文章保持英文（海外 GEO 内容）。同 URL 切换，不做中文 SEO / hreflang。
 
 ### JSON-LD 规范
 
@@ -158,4 +169,5 @@ website/
 - [ ] 产品主图：flock-fiber / adhesive / color-paste / equipment / chemicals 现为占位图，待换真图
 - [ ] 首页产品卡：现为 SVG 图标，待补真实产品图提升「专业感」
 - [x] GEO 文章：规划 12 篇，已全部完成，正文已补 hero 配图
+- [x] 中英切换按钮：2026-08-19 已上线（5 主页面，人工校对译文；12 篇文章保持英文）
 - [ ] 平台注册：LinkedIn 公司主页、Made-in-China.com 免费版
