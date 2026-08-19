@@ -54,3 +54,5 @@ FILES.forEach(function (f) {
 });
 
 console.log(total ? ('\n共 ' + total + ' 处待补中文。') : '\n✅ 5 个主页面无遗漏（data-zh 已覆盖所有可见英文）。');
+// 有漏译时返回 1（让 git pre-commit 钩子能拦截提交），无漏返回 0
+process.exit(total ? 1 : 0);
