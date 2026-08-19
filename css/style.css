@@ -80,6 +80,12 @@
   --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* 中文字体：切换到中文时用系统黑体栈（中文不套 Poppins/Open Sans） */
+html[lang="zh"] {
+  --font-heading: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', 'Noto Sans CJK SC', 'Source Han Sans SC', -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', 'Noto Sans CJK SC', -apple-system, 'Segoe UI', sans-serif;
+}
+
 /* ============================================================
    📌 二、基础重置（不用改）
    ============================================================ */
@@ -318,6 +324,39 @@ nav a.active {
   nav ul.active {
     display: flex;           /* JS 切换此类来展开/收起 */
   }
+}
+
+/* ============================================================
+   中英切换按钮（EN ↔ 中文）
+   桌面端放在导航右侧，移动端放在汉堡键左侧
+   ============================================================ */
+.lang-toggle {
+  padding: 5px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--white);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 20px;       /* 药丸形，与产品导航一致 */
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+.lang-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* 桌面端：logo 左，导航+按钮 右 */
+@media (min-width: 769px) {
+  header nav { margin-left: auto; }
+  .lang-toggle { margin-left: 20px; }
+}
+
+/* 移动端：按钮靠右、汉堡键在最右 */
+@media (max-width: 768px) {
+  .lang-toggle { margin-left: auto; margin-right: 12px; }
 }
 
 /* ============================================================

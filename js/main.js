@@ -7,6 +7,7 @@
  *   3. 色卡画廊：Tab 标签切换材质
  *   4. 色卡画廊：点击缩略图弹出灯箱大图
  *   5. 产品导航滚动高亮（Scroll Spy）
+ *   6. 中英切换（EN ↔ 中文）
  *
  * 修改指南：
  *   - 所有页面共用这一个 JS 文件，改一处全站生效
@@ -14,6 +15,92 @@
  */
 
 document.addEventListener('DOMContentLoaded', function () {
+
+  // ==========================================
+  // 功能 6：中英切换（EN ↔ 中文）
+  // 原理：每个可翻译元素带 data-zh 属性，英文原文写在标签里。
+  // 切中文时先把英文原文快照到 data-en，再写入 data-zh；
+  // 切回英文时从 data-en 还原（保留 <span> 高亮等嵌套结构）。
+  // ==========================================
+  var LANG_KEY = 'fenxingflock-lang';
+
+  // 判断初始语言：优先读 localStorage，否则按浏览器语言
+  function detectLang() {
+    try {
+      var saved = localStorage.getItem(LANG_KEY);
+      if (saved === 'en' || saved === 'zh') { return saved; }
+    } catch (e) { /* localStorage 不可用时忽略 */ }
+    var nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    return nav.indexOf('zh') === 0 ? 'zh' : 'en';
+  }
+
+  // 应用语言：切换所有带 data-zh 的元素的文本
+  function applyLang(lang) {
+    document.documentElement.lang = lang;
+
+    // 1) 可见文本（innerHTML，支持 <span> 高亮）
+    document.querySelectorAll('[data-zh]').forEach(function (el) {
+      if (lang === 'zh') {
+        if (!el.hasAttribute('data-en')) {
+          el.setAttribute('data-en', el.innerHTML);   // 快照英文原文
+        }
+        el.innerHTML = el.getAttribute('data-zh');
+      } else {
+        if (el.hasAttribute('data-en')) {
+          el.innerHTML = el.getAttribute('data-en');  // 还原英文
+        }
+      }
+    });
+
+    // 2) 表单 placeholder
+    document.querySelectorAll('[data-zh-placeholder]').forEach(function (el) {
+      if (lang === 'zh') {
+        if (!el.hasAttribute('data-en-placeholder')) {
+          el.setAttribute('data-en-placeholder', el.getAttribute('placeholder') || '');
+        }
+        el.setAttribute('placeholder', el.getAttribute('data-zh-placeholder'));
+      } else if (el.hasAttribute('data-en-placeholder')) {
+        el.setAttribute('placeholder', el.getAttribute('data-en-placeholder'));
+      }
+    });
+
+    // 3) 图片 alt
+    document.querySelectorAll('[data-zh-alt]').forEach(function (el) {
+      if (lang === 'zh') {
+        if (!el.hasAttribute('data-en-alt')) {
+          el.setAttribute('data-en-alt', el.getAttribute('alt') || '');
+        }
+        el.setAttribute('alt', el.getAttribute('data-zh-alt'));
+      } else if (el.hasAttribute('data-en-alt')) {
+        el.setAttribute('alt', el.getAttribute('data-en-alt'));
+      }
+    });
+  }
+
+  // 更新按钮文案：英文态显示「中文」，中文态显示「EN」
+  function updateLangButton(lang) {
+    var btn = document.getElementById('langToggle');
+    if (btn) {
+      btn.textContent = (lang === 'zh') ? 'EN' : '中文';
+    }
+  }
+
+  var currentLang = detectLang();
+  applyLang(currentLang);
+  updateLangButton(currentLang);
+
+  // 绑定切换按钮点击
+  var langToggleBtn = document.getElementById('langToggle');
+  if (langToggleBtn) {
+    langToggleBtn.addEventListener('click', function () {
+      currentLang = (currentLang === 'zh') ? 'en' : 'zh';
+      applyLang(currentLang);
+      updateLangButton(currentLang);
+      try {
+        localStorage.setItem(LANG_KEY, currentLang);
+      } catch (e) { /* localStorage 不可用时忽略 */ }
+    });
+  }
 
   // ==========================================
   // 功能 1：移动端导航菜单切换

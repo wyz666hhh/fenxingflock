@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 🔧 SEO 描述 -->
   <meta name="description" content="Foshan Fenxing Technology — a China-based flocking-industry supply-chain specialist. Learn about our mission, process expertise, and quality standards.">
-  <title>About Us — Foshan Fenxing Technology | Fenxing Flock</title>
+  <title data-zh="关于我们 — 佛山分形科技 | 分形植绒 Fenxing Flock">About Us — Foshan Fenxing Technology | Fenxing Flock</title>
   <link rel="stylesheet" href="css/style.css">
 
   <!-- ===== 结构化数据 AboutPage（给 Google/AI 搜索引擎） ===== -->
@@ -41,26 +41,31 @@
 <header>
   <div class="container">
     <a href="index.html" class="logo">Fenxing<span>Flock</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-zh="首页">Home</a></li>
+        <li><a href="products.html" data-zh="产品">Products</a></li>
+        <li><a href="about.html" class="active" data-zh="关于我们">About Us</a></li>
+        <li><a href="resources.html" data-zh="资源">Resources</a></li>
+        <li><a href="contact.html" data-zh="联系">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- 中英切换按钮 -->
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">中文</button>
+
+    <!-- 移动端汉堡菜单按钮 -->
     <button class="nav-toggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </div>
 </header>
 
 <!-- ===== 页面顶部横幅 ===== -->
 <section class="page-banner">
   <div class="container">
-    <h1>About Us</h1>
-    <p class="banner-sub">Who we are and why manufacturers trust us</p>
+    <h1 data-zh="关于我们">About Us</h1>
+    <p class="banner-sub" data-zh="我们是谁，以及制造商为什么信任我们">Who we are and why manufacturers trust us</p>
   </div>
 </section>
 
@@ -70,14 +75,14 @@
     <div class="about-content">
       <div>
         <img src="images/company/about-us.jpg" alt="Fenxing Flock Team" class="img-placeholder" style="min-height:300px;" loading="lazy">
-        <p class="gallery-caption">Foshan, Guangdong — the heart of China's manufacturing hub</p>
+        <p class="gallery-caption" data-zh="广东佛山——中国制造业中心的心脏">Foshan, Guangdong — the heart of China's manufacturing hub</p>
       </div>
       <!-- 🔧 公司介绍文字 -->
       <div class="about-text">
-        <h2>We Find the Materials Others Can't</h2>
-        <p>Foshan Fenxing Technology Co., Ltd. is a material supply-chain service provider deeply rooted in the flocking industry. Through a broad industry network and professional sourcing capability, we deliver one-stop procurement of <strong>color pastes, flock fibers, fiber tow, adhesives, chemical raw materials, and flocking equipment</strong>.</p>
-        <p><strong>The materials others can't find, we find. The supply others can't handle, we handle.</strong></p>
-        <p>We're not just resellers — we understand your production line, your quality standards, and your cost pressures, because we know the flocking process end to end.</p>
+        <h2 data-zh="我们能找到别人找不到的材料">We Find the Materials Others Can't</h2>
+        <p data-zh="佛山分形科技有限公司是一家深耕植绒行业的材料供应链服务商。凭借广泛的行业渠道与专业的采购能力，我们提供色浆、绒毛、丝束、粘合剂、化工原料与植绒设备的一站式采购。">Foshan Fenxing Technology Co., Ltd. is a material supply-chain service provider deeply rooted in the flocking industry. Through a broad industry network and professional sourcing capability, we deliver one-stop procurement of <strong>color pastes, flock fibers, fiber tow, adhesives, chemical raw materials, and flocking equipment</strong>.</p>
+        <p data-zh="别人找不到的材料，我们来找；别人搞不定的供应，我们来搞定。"><strong>The materials others can't find, we find. The supply others can't handle, we handle.</strong></p>
+        <p data-zh="我们不只是转售商——我们懂你的生产线、你的质量标准与成本压力，因为我们从头到尾熟悉植绒工艺。">We're not just resellers — we understand your production line, your quality standards, and your cost pressures, because we know the flocking process end to end.</p>
       </div>
     </div>
   </div>
@@ -86,24 +91,24 @@
 <!-- ==================== 使命 · 愿景 · 价值观 ==================== -->
 <section class="section-alt">
   <div class="container section">
-    <h2 class="section-title">Mission · Vision · Values</h2>
-    <p class="section-subtitle">The beliefs that guide how we work</p>
+    <h2 class="section-title" data-zh="使命 · 愿景 · 价值观">Mission · Vision · Values</h2>
+    <p class="section-subtitle" data-zh="指引我们工作的信念">The beliefs that guide how we work</p>
 
     <div class="why-grid">
       <div class="why-item">
         <div class="why-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
-        <h4>Our Mission</h4>
-        <p>Applying flocking-materials expertise to reveal the beauty of flocking. Through professional sourcing and supply-chain capability, we help every fiber show its unique charm.</p>
+        <h4 data-zh="我们的使命">Our Mission</h4>
+        <p data-zh="用植绒材料的专业，呈现植绒之美。通过专业的采购与供应链能力，让每一根纤维都展现独特魅力。">Applying flocking-materials expertise to reveal the beauty of flocking. Through professional sourcing and supply-chain capability, we help every fiber show its unique charm.</p>
       </div>
       <div class="why-item">
         <div class="why-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></div>
-        <h4>Our Vision</h4>
-        <p>To become a company serving the global flocking industry — from China to flocking manufacturers everywhere, delivering material supply they can trust.</p>
+        <h4 data-zh="我们的愿景">Our Vision</h4>
+        <p data-zh="成为服务全球植绒行业的公司——从中国到世界各地的植绒制造商，提供他们信赖的材料供应。">To become a company serving the global flocking industry — from China to flocking manufacturers everywhere, delivering material supply they can trust.</p>
       </div>
       <div class="why-item">
         <div class="why-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg></div>
-        <h4>Our Values</h4>
-        <p>Dig deep into customer needs, create product value. Beyond supplying products, we're committed to creating measurable business value for our customers.</p>
+        <h4 data-zh="我们的价值观">Our Values</h4>
+        <p data-zh="深挖客户需求，创造产品价值。除了供应产品，我们更致力于为客户创造可衡量的商业价值。">Dig deep into customer needs, create product value. Beyond supplying products, we're committed to creating measurable business value for our customers.</p>
       </div>
     </div>
   </div>
@@ -112,90 +117,90 @@
 <!-- ==================== 绒毛制造流程（懂工艺） ==================== -->
 <section class="section">
   <div class="container">
-    <h2 class="section-title">We Know the Process — So We Pick the Right Product</h2>
-    <p class="section-subtitle">Understanding flock fiber manufacturing is what sets us apart from ordinary traders.</p>
+    <h2 class="section-title" data-zh="我们懂工艺——所以我们选得对产品">We Know the Process — So We Pick the Right Product</h2>
+    <p class="section-subtitle" data-zh="懂植绒纤维制造，是我们区别于普通贸易商的地方。">Understanding flock fiber manufacturing is what sets us apart from ordinary traders.</p>
 
     <div class="why-grid">
       <!-- 🔧 工序 1 -->
       <div class="why-item">
         <div class="why-icon num">1</div>
-        <h4>Raw Material Selection</h4>
-        <p>Nylon, modified polyester, viscose, and black yarn matched to your flocking scenario, each with targeted pre-treatment.</p>
+        <h4 data-zh="原料选择">Raw Material Selection</h4>
+        <p data-zh="尼龙、改性涤纶、粘胶与黑丝，匹配你的植绒场景，各配针对性前处理。">Nylon, modified polyester, viscose, and black yarn matched to your flocking scenario, each with targeted pre-treatment.</p>
       </div>
       <!-- 🔧 工序 2 -->
       <div class="why-item">
         <div class="why-icon num">2</div>
-        <h4>Precision Cutting</h4>
-        <p>Dry or wet cutting by material, with cut lengths controlled to 0.3–1.5mm for consistent density and hand feel.</p>
+        <h4 data-zh="精密切断">Precision Cutting</h4>
+        <p data-zh="按材质干切或湿切，切断长度控制到 0.3–1.5mm，保证密度与手感一致。">Dry or wet cutting by material, with cut lengths controlled to 0.3–1.5mm for consistent density and hand feel.</p>
       </div>
       <!-- 🔧 工序 3 -->
       <div class="why-item">
         <div class="why-icon num">3</div>
-        <h4>Washing &amp; Pre-treatment</h4>
-        <p>Removing surface oils and residue while boosting conductivity, for a clean dyeing base and high-standard cleanliness.</p>
+        <h4 data-zh="水洗与前处理">Washing &amp; Pre-treatment</h4>
+        <p data-zh="去除表面油污与残留，同时提升导电性，为染色提供洁净基底与高标准洁净度。">Removing surface oils and residue while boosting conductivity, for a clean dyeing base and high-standard cleanliness.</p>
       </div>
       <!-- 🔧 工序 4 -->
       <div class="why-item">
         <div class="why-icon num">4</div>
-        <h4>Dyeing</h4>
-        <p>High-temperature, high-pressure dyeing with electro-deposition for conductivity, color fastness, and batch consistency.</p>
+        <h4 data-zh="染色">Dyeing</h4>
+        <p data-zh="高温高压染色，配合电沉积工艺，保证导电性、色牢度与批次一致性。">High-temperature, high-pressure dyeing with electro-deposition for conductivity, color fastness, and batch consistency.</p>
       </div>
       <!-- 🔧 工序 5 -->
       <div class="why-item">
         <div class="why-icon num">5</div>
-        <h4>Electro-Deposition</h4>
-        <p>Anti-static and conductive treatment for vertical anchoring and even fiber distribution during flocking.</p>
+        <h4 data-zh="电沉积">Electro-Deposition</h4>
+        <p data-zh="抗静电与导电处理，保证植绒时纤维竖直锚定、分布均匀。">Anti-static and conductive treatment for vertical anchoring and even fiber distribution during flocking.</p>
       </div>
       <!-- 🔧 工序 6 -->
       <div class="why-item">
         <div class="why-icon num">6</div>
-        <h4>Dehydration &amp; Drying</h4>
-        <p>Moisture controlled to standard for conductivity and dispersibility — dry, loose, and clump-free.</p>
+        <h4 data-zh="脱水与烘干">Dehydration &amp; Drying</h4>
+        <p data-zh="水分控制到标准，保证导电性与分散性——干爽、松散、不结团。">Moisture controlled to standard for conductivity and dispersibility — dry, loose, and clump-free.</p>
       </div>
       <!-- 🔧 工序 7 -->
       <div class="why-item">
         <div class="why-icon num">7</div>
-        <h4>Sieving &amp; Grading</h4>
-        <p>Multi-stage vibration sieving removes short fibers, dust, and lumps for uniform fiber length.</p>
+        <h4 data-zh="筛分与分级">Sieving &amp; Grading</h4>
+        <p data-zh="多级振动筛分去除短纤维、粉尘与结块，保证纤维长度均匀。">Multi-stage vibration sieving removes short fibers, dust, and lumps for uniform fiber length.</p>
       </div>
       <!-- 🔧 工序 8 -->
       <div class="why-item">
         <div class="why-icon num">8</div>
-        <h4>Inspection &amp; Packaging</h4>
-        <p>Five-dimension quality inspection with batch traceability and a quality report for every batch.</p>
+        <h4 data-zh="检验与包装">Inspection &amp; Packaging</h4>
+        <p data-zh="五维质检，每批可追溯，并附质检报告。">Five-dimension quality inspection with batch traceability and a quality report for every batch.</p>
       </div>
     </div>
 
-    <p class="section-subtitle" style="margin-top:40px;margin-bottom:0;">Common flock fiber materials we work with: viscose · nylon · cotton · acrylic · polypropylene</p>
+    <p class="section-subtitle" style="margin-top:40px;margin-bottom:0;" data-zh="我们常处理的植绒纤维材质：粘胶 · 尼龙 · 棉 · 腈纶 · 丙纶">Common flock fiber materials we work with: viscose · nylon · cotton · acrylic · polypropylene</p>
   </div>
 </section>
 
 <!-- ==================== 信任四大承诺 ==================== -->
 <section class="section-alt">
   <div class="container section">
-    <h2 class="section-title">A Partner You Can Trust</h2>
-    <p class="section-subtitle">What we promise every customer</p>
+    <h2 class="section-title" data-zh="值得信赖的合作伙伴">A Partner You Can Trust</h2>
+    <p class="section-subtitle" data-zh="我们对每位客户的承诺">What we promise every customer</p>
 
     <div class="why-grid">
       <div class="why-item">
         <div class="why-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
-        <h4>Eco-Compliance</h4>
-        <p>0-formaldehyde crosslinkers and other eco-friendly options, ensuring your products meet REACH and international standards — no export compliance worries.</p>
+        <h4 data-zh="环保合规">Eco-Compliance</h4>
+        <p data-zh="0 甲醛交联剂等环保选项，确保你的产品满足 REACH 与国际标准——出口合规无忧。">0-formaldehyde crosslinkers and other eco-friendly options, ensuring your products meet REACH and international standards — no export compliance worries.</p>
       </div>
       <div class="why-item">
         <div class="why-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg></div>
-        <h4>Quality Commitment</h4>
-        <p>Every incoming batch is strictly inspected with traceable quality reports. We don't just resell — we hold your first quality gate.</p>
+        <h4 data-zh="品质承诺">Quality Commitment</h4>
+        <p data-zh="每一批来料都严格检验，质检报告可追溯。我们不只是转售——我们守住你的第一道质量关。">Every incoming batch is strictly inspected with traceable quality reports. We don't just resell — we hold your first quality gate.</p>
       </div>
       <div class="why-item">
         <div class="why-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/><circle cx="12" cy="12" r="10"/></svg></div>
-        <h4>Technical Support</h4>
-        <p>Solid technical knowledge means we can guide material selection, process parameters, and common problem-solving.</p>
+        <h4 data-zh="技术支持">Technical Support</h4>
+        <p data-zh="扎实的技术功底，让我们能指导你选材、调工艺参数、解决常见问题。">Solid technical knowledge means we can guide material selection, process parameters, and common problem-solving.</p>
       </div>
       <div class="why-item">
         <div class="why-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h4>Long-Term Mindset</h4>
-        <p>We pursue long-term partnerships, not one-off deals — from sampling support to bulk supply, we stay by your side.</p>
+        <h4 data-zh="长期主义">Long-Term Mindset</h4>
+        <p data-zh="我们追求长期合作，而非一锤子买卖——从打样支持到批量供应，我们一直在你身边。">We pursue long-term partnerships, not one-off deals — from sampling support to bulk supply, we stay by your side.</p>
       </div>
     </div>
   </div>
@@ -204,37 +209,37 @@
 <!-- ==================== 工作流程（How We Work） ==================== -->
 <section class="section">
   <div class="container">
-    <h2 class="section-title">How We Work</h2>
-    <p class="section-subtitle">A simple, transparent process designed around your needs</p>
+    <h2 class="section-title" data-zh="我们如何合作">How We Work</h2>
+    <p class="section-subtitle" data-zh="围绕你的需求设计的简单、透明流程">A simple, transparent process designed around your needs</p>
 
     <div class="why-grid">
       <!-- 🔧 步骤 1 -->
       <div class="why-item">
         <div class="why-icon num">1</div>
-        <h4>Requirement Discussion</h4>
-        <p>Tell us what material you need and what you require — specifications, quantity, target price.</p>
+        <h4 data-zh="需求沟通">Requirement Discussion</h4>
+        <p data-zh="告诉我们你需要什么材料、有什么要求——规格、数量、目标价。">Tell us what material you need and what you require — specifications, quantity, target price.</p>
       </div>
       <!-- 🔧 步骤 2 -->
       <div class="why-item">
         <div class="why-icon num">2</div>
-        <h4>Channel Matching</h4>
-        <p>We mobilize our resource network to find the best source for your requirement.</p>
+        <h4 data-zh="渠道匹配">Channel Matching</h4>
+        <p data-zh="我们调动资源网络，为你的需求找到最佳货源。">We mobilize our resource network to find the best source for your requirement.</p>
       </div>
       <!-- 🔧 步骤 3 -->
       <div class="why-item">
         <div class="why-icon num">3</div>
-        <h4>Sample Confirmation</h4>
-        <p>Sample and test first — we cooperate only after you're satisfied with the quality.</p>
+        <h4 data-zh="样品确认">Sample Confirmation</h4>
+        <p data-zh="先打样测试——你满意品质后我们再合作。">Sample and test first — we cooperate only after you're satisfied with the quality.</p>
       </div>
       <!-- 🔧 步骤 4 -->
       <div class="why-item">
         <div class="why-icon num">4</div>
-        <h4>Stable Supply</h4>
-        <p>Build a long-term supply relationship with continuous, quality service.</p>
+        <h4 data-zh="稳定供货">Stable Supply</h4>
+        <p data-zh="建立长期供应关系，持续提供优质服务。">Build a long-term supply relationship with continuous, quality service.</p>
       </div>
     </div>
 
-    <p class="section-subtitle" style="margin-top:40px;margin-bottom:0;">Whether you're sourcing a hard-to-find material, or need a reliable long-term partner — we're here.</p>
+    <p class="section-subtitle" style="margin-top:40px;margin-bottom:0;" data-zh="无论你是要找难找的材料，还是需要一个可靠的长期伙伴——我们都在。">Whether you're sourcing a hard-to-find material, or need a reliable long-term partner — we're here.</p>
   </div>
 </section>
 
@@ -244,14 +249,14 @@
     <div class="about-content">
       <!-- 🔧 仓储供应链文字（左文右图，与首屏区分） -->
       <div class="about-text">
-        <h2>Sourcing &amp; Warehousing You Can Rely On</h2>
-        <p>Behind our material expertise is a real supply-chain operation. We consolidate sourcing across a network of vetted factories, stage inventory in our own warehouse, and run a pre-shipment quality gate before anything leaves for your port.</p>
-        <p>That means you get <strong>one partner, one invoice, and one quality standard</strong> — instead of chasing multiple suppliers across China. We consolidate your order, inspect it as a single batch, and manage the logistics so it arrives on time and to spec.</p>
-        <p><strong>Fewer moving parts. Fewer surprises. A supply line you can plan around.</strong></p>
+        <h2 data-zh="值得信赖的采购与仓储">Sourcing &amp; Warehousing You Can Rely On</h2>
+        <p data-zh="在我们材料专业的背后，是一条真实的供应链运作。我们在经过核实的工厂网络中整合采购，在自己的仓库备货，并在货物发往你港口前进行装船前质检。">Behind our material expertise is a real supply-chain operation. We consolidate sourcing across a network of vetted factories, stage inventory in our own warehouse, and run a pre-shipment quality gate before anything leaves for your port.</p>
+        <p data-zh="这意味着你只需对接一个伙伴、一张发票、一个质量标准——而不是在中国到处找多个供应商。我们整合你的订单，作为一个批次统一检验，并管理物流，确保按时、按规格到货。">That means you get <strong>one partner, one invoice, and one quality standard</strong> — instead of chasing multiple suppliers across China. We consolidate your order, inspect it as a single batch, and manage the logistics so it arrives on time and to spec.</p>
+        <p data-zh="更少的环节。更少的意外。一条你可以提前规划的供应链。"><strong>Fewer moving parts. Fewer surprises. A supply line you can plan around.</strong></p>
       </div>
       <div>
         <img src="images/company/warehouse.jpg" alt="Fenxing Flock warehouse and supply chain" class="img-placeholder" style="min-height:300px;" loading="lazy">
-        <p class="gallery-caption">Consolidation and pre-shipment inspection at our Foshan warehouse</p>
+        <p class="gallery-caption" data-zh="佛山仓库的整合与装船前检验">Consolidation and pre-shipment inspection at our Foshan warehouse</p>
       </div>
     </div>
   </div>
@@ -263,33 +268,33 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Fenxing Flock</h4>
-        <p>Foshan Fenxing Technology Co., Ltd.</p>
-        <p>Flock fiber and raw materials supplier from China.</p>
+        <p data-zh="佛山分形科技有限公司">Foshan Fenxing Technology Co., Ltd.</p>
+        <p data-zh="来自中国的植绒纤维与原料供应商">Flock fiber and raw materials supplier from China.</p>
       </div>
       <div class="footer-col">
-        <h4>Products</h4>
-        <a href="products.html#flock-fiber">Flock Fibers</a>
-        <a href="products.html#fiber-tow">Fiber Tow</a>
-        <a href="products.html#adhesives">Adhesives</a>
-        <a href="products.html#color-paste">Color Pastes</a>
-        <a href="products.html#chemicals">Chemicals</a>
-        <a href="products.html#equipment">Equipment</a>
+        <h4 data-zh="产品">Products</h4>
+        <a href="products.html#flock-fiber" data-zh="绒毛">Flock Fibers</a>
+        <a href="products.html#fiber-tow" data-zh="丝束">Fiber Tow</a>
+        <a href="products.html#adhesives" data-zh="粘合剂">Adhesives</a>
+        <a href="products.html#color-paste" data-zh="色浆">Color Pastes</a>
+        <a href="products.html#chemicals" data-zh="化工原料">Chemicals</a>
+        <a href="products.html#equipment" data-zh="设备">Equipment</a>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
-        <a href="about.html">About Us</a>
-        <a href="resources.html">Resources</a>
-        <a href="contact.html">Contact</a>
+        <h4 data-zh="快速链接">Quick Links</h4>
+        <a href="about.html" data-zh="关于我们">About Us</a>
+        <a href="resources.html" data-zh="资源">Resources</a>
+        <a href="contact.html" data-zh="联系">Contact</a>
       </div>
       <div class="footer-col">
-        <h4>Contact</h4>
-        <p><svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Foshan, Guangdong, China</p>
+        <h4 data-zh="联系我们">Contact</h4>
+        <p><svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> <span data-zh="中国 广东 佛山">Foshan, Guangdong, China</span></p>
         <p><a href="https://wa.me/8613420870637" target="_blank" rel="noopener"><svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +86 134 2087 0637</a></p>
         <p><a href="mailto:fenxingflock@163.com"><svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> fenxingflock@163.com</a></p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Foshan Fenxing Technology Co., Ltd. All rights reserved.</p>
+      <p data-zh="© 2026 佛山分形科技有限公司 版权所有">&copy; 2026 Foshan Fenxing Technology Co., Ltd. All rights reserved.</p>
     </div>
   </div>
 </footer>

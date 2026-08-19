@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 🔧 SEO 描述 -->
   <meta name="description" content="Contact Fenxing Flock for a quote on flock fiber, adhesives, and raw materials — send your requirements or reach us on WhatsApp. Based in Foshan, China.">
-  <title>Contact Us — Get a Flock Fiber Quote | Fenxing Flock</title>
+  <title data-zh="联系我们 — 获取植绒纤维报价 | 分形植绒 Fenxing Flock">Contact Us — Get a Flock Fiber Quote | Fenxing Flock</title>
   <link rel="stylesheet" href="css/style.css">
 
   <!-- ===== 结构化数据 ContactPage（给 Google/AI 搜索引擎） ===== -->
@@ -43,26 +43,31 @@
 <header>
   <div class="container">
     <a href="index.html" class="logo">Fenxing<span>Flock</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-zh="首页">Home</a></li>
+        <li><a href="products.html" data-zh="产品">Products</a></li>
+        <li><a href="about.html" data-zh="关于我们">About Us</a></li>
+        <li><a href="resources.html" data-zh="资源">Resources</a></li>
+        <li><a href="contact.html" class="active" data-zh="联系">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- 中英切换按钮 -->
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">中文</button>
+
+    <!-- 移动端汉堡菜单按钮 -->
     <button class="nav-toggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
   </div>
 </header>
 
 <!-- ===== 页面顶部横幅 ===== -->
 <section class="page-banner">
   <div class="container">
-    <h1>Contact Us</h1>
-    <p class="banner-sub">We'd love to hear from you — inquiry, sample request, or just a question</p>
+    <h1 data-zh="联系我们">Contact Us</h1>
+    <p class="banner-sub" data-zh="我们很乐意收到你的消息——询盘、样品需求，或只是一个问题">We'd love to hear from you — inquiry, sample request, or just a question</p>
   </div>
 </section>
 
@@ -73,21 +78,21 @@
 
       <!-- 🔧 左侧：联系信息 -->
       <div class="contact-info">
-        <h2>Get in Touch</h2>
+        <h2 data-zh="联系我们">Get in Touch</h2>
 
         <div class="contact-item">
           <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><path d="M12 18h.01"/></svg></div>
           <div>
-            <h4>WhatsApp / Phone</h4>
+            <h4 data-zh="WhatsApp / 电话">WhatsApp / Phone</h4>
             <p><a href="https://wa.me/8613420870637" target="_blank" rel="noopener">+86 134 2087 0637</a></p>
-            <p class="contact-note">Tap to chat with us directly on WhatsApp</p>
+            <p class="contact-note" data-zh="点击即可在 WhatsApp 上直接与我们聊天">Tap to chat with us directly on WhatsApp</p>
           </div>
         </div>
 
         <div class="contact-item">
           <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
           <div>
-            <h4>Email</h4>
+            <h4 data-zh="邮箱">Email</h4>
             <p><a href="mailto:fenxingflock@163.com">fenxingflock@163.com</a></p>
           </div>
         </div>
@@ -95,51 +100,51 @@
         <div class="contact-item">
           <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <div>
-            <h4>Address</h4>
-            <p>Foshan, Guangdong, China</p>
+            <h4 data-zh="地址">Address</h4>
+            <p data-zh="中国 广东 佛山">Foshan, Guangdong, China</p>
           </div>
         </div>
 
         <div class="contact-item">
           <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
           <div>
-            <h4>Response Time</h4>
-            <p>We typically reply within 24 hours, often sooner.</p>
+            <h4 data-zh="回复时间">Response Time</h4>
+            <p data-zh="我们通常在 24 小时内回复，往往更快。">We typically reply within 24 hours, often sooner.</p>
           </div>
         </div>
       </div>
 
       <!-- 🔧 右侧：询价表单（FormSubmit 转发到邮箱） -->
       <div class="contact-cta">
-        <h2 style="font-size:1.55rem;color:var(--navy);margin-bottom:8px;">Send Us Your Requirements</h2>
-        <p style="color:var(--gray);margin-bottom:20px;">Tell us what you need — we'll reply with a quote within 24 hours. Prefer chat? <a href="https://wa.me/8613420870637" target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>
+        <h2 style="font-size:1.55rem;color:var(--navy);margin-bottom:8px;" data-zh="发送你的需求">Send Us Your Requirements</h2>
+        <p style="color:var(--gray);margin-bottom:20px;"><span data-zh="告诉我们你需要什么——我们会在 24 小时内回复报价。更喜欢即时沟通？">Tell us what you need — we'll reply with a quote within 24 hours. Prefer chat?</span> <a href="https://wa.me/8613420870637" target="_blank" rel="noopener" data-zh="在 WhatsApp 上给我们留言">Message us on WhatsApp</a>.</p>
 
         <form class="contact-form" action="https://formsubmit.co/fenxingflock@163.com" method="POST">
           <input type="hidden" name="_subject" value="New inquiry from fenxingflock.com">
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_honey" style="display:none">
 
-          <label for="inq-name">Your Name *</label>
-          <input type="text" id="inq-name" name="Name" placeholder="Your name" required>
+          <label for="inq-name" data-zh="你的姓名 *">Your Name *</label>
+          <input type="text" id="inq-name" name="Name" placeholder="Your name" data-zh-placeholder="你的姓名" required>
 
-          <label for="inq-email">Email *</label>
+          <label for="inq-email" data-zh="邮箱 *">Email *</label>
           <input type="email" id="inq-email" name="Email" placeholder="you@company.com" required>
 
-          <label for="inq-product">What are you looking for?</label>
+          <label for="inq-product" data-zh="你在找什么？">What are you looking for?</label>
           <select id="inq-product" name="Product">
-            <option>Flock Fibers</option>
-            <option>Fiber Tow</option>
-            <option>Flocking Adhesives</option>
-            <option>Color Pastes</option>
-            <option>Chemical Raw Materials</option>
-            <option>Flocking Equipment</option>
-            <option>Not sure yet — I need advice</option>
+            <option data-zh="绒毛">Flock Fibers</option>
+            <option data-zh="丝束">Fiber Tow</option>
+            <option data-zh="植绒粘合剂">Flocking Adhesives</option>
+            <option data-zh="色浆">Color Pastes</option>
+            <option data-zh="化工原料">Chemical Raw Materials</option>
+            <option data-zh="植绒设备">Flocking Equipment</option>
+            <option data-zh="还不确定——我需要建议">Not sure yet — I need advice</option>
           </select>
 
-          <label for="inq-message">Your Requirements</label>
-          <textarea id="inq-message" name="Requirements" rows="4" placeholder="Spec, quantity, color, target price — whatever you have"></textarea>
+          <label for="inq-message" data-zh="你的需求">Your Requirements</label>
+          <textarea id="inq-message" name="Requirements" rows="4" placeholder="Spec, quantity, color, target price — whatever you have" data-zh-placeholder="规格、数量、颜色、目标价——你有的信息都可以"></textarea>
 
-          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+          <button type="submit" class="btn btn-primary" data-zh="发送询盘">Send Inquiry</button>
         </form>
       </div>
 
@@ -150,33 +155,33 @@
 <!-- ==================== FAQ 常见问题 ==================== -->
 <section class="section-alt">
   <div class="container section text-center">
-    <h2 class="section-title">Frequently Asked Questions</h2>
+    <h2 class="section-title" data-zh="常见问题">Frequently Asked Questions</h2>
     <div class="faq-section" style="text-align:left;max-width:700px;margin:0 auto;">
 
       <dl>
         <!-- 🔧 FAQ 1：MOQ -->
-        <dt>What is your minimum order quantity (MOQ)?</dt>
-        <dd>We keep quantities flexible. Tell us your spec and target quantity — we'll match the right source and terms. Trial orders are welcome, so you can test quality before committing to bulk.</dd>
+        <dt data-zh="你们的最低起订量（MOQ）是多少？">What is your minimum order quantity (MOQ)?</dt>
+        <dd data-zh="我们保持数量灵活。告诉我们你的规格与目标数量——我们会匹配正确的货源与条款。欢迎试单，你可以在批量下单前先测试品质。">We keep quantities flexible. Tell us your spec and target quantity — we'll match the right source and terms. Trial orders are welcome, so you can test quality before committing to bulk.</dd>
 
         <!-- 🔧 FAQ 2：样品 -->
-        <dt>Do you provide free samples?</dt>
-        <dd>Yes, we can provide small samples for quality evaluation. Shipping costs for samples are usually covered by the buyer, but we'll deduct the sample cost from your first order.</dd>
+        <dt data-zh="你们提供免费样品吗？">Do you provide free samples?</dt>
+        <dd data-zh="可以，我们能提供小量样品供品质评估。样品的运费通常由买方承担，但我们会从你的首单中扣除样品费用。">Yes, we can provide small samples for quality evaluation. Shipping costs for samples are usually covered by the buyer, but we'll deduct the sample cost from your first order.</dd>
 
         <!-- 🔧 FAQ 3：物流时间 -->
-        <dt>How long does shipping take?</dt>
-        <dd>Depending on your location and shipping method: express (5-10 days), air freight (7-15 days), sea freight (15-30 days to Southeast Asia, 25-40 days to Middle East). We'll recommend the best option for your order size.</dd>
+        <dt data-zh="运输需要多长时间？">How long does shipping take?</dt>
+        <dd data-zh="取决于你的位置与运输方式：快递（5-10 天）、空运（7-15 天）、海运（到东南亚 15-30 天，到中东 25-40 天）。我们会根据你的订单量推荐最佳方案。">Depending on your location and shipping method: express (5-10 days), air freight (7-15 days), sea freight (15-30 days to Southeast Asia, 25-40 days to Middle East). We'll recommend the best option for your order size.</dd>
 
         <!-- 🔧 FAQ 4：颜色定制 -->
-        <dt>Can you match a specific color?</dt>
-        <dd>Absolutely. Send us your color sample or Pantone code, and we'll match it. Custom color matching typically adds 3-5 days to production time.</dd>
+        <dt data-zh="你们能匹配特定颜色吗？">Can you match a specific color?</dt>
+        <dd data-zh="当然。把你的颜色样品或 Pantone 色号发给我们，我们就能匹配。定制配色通常会在生产时间上增加 3-5 天。">Absolutely. Send us your color sample or Pantone code, and we'll match it. Custom color matching typically adds 3-5 days to production time.</dd>
 
         <!-- 🔧 FAQ 5：付款方式 -->
-        <dt>What payment methods do you accept?</dt>
-        <dd>We accept T/T (bank transfer) and PayPal for small orders, with other options available upon request. Standard terms are 30% deposit, 70% before shipment.</dd>
+        <dt data-zh="你们接受哪些付款方式？">What payment methods do you accept?</dt>
+        <dd data-zh="我们接受 T/T（银行转账）与 PayPal（适用于小额订单），也可按需提供其他方式。标准条款是 30% 定金、70% 发货前付清。">We accept T/T (bank transfer) and PayPal for small orders, with other options available upon request. Standard terms are 30% deposit, 70% before shipment.</dd>
 
         <!-- 🔧 FAQ 6：清关 -->
-        <dt>Do you handle customs clearance?</dt>
-        <dd>We handle export clearance in China. Import clearance at your destination is the buyer's responsibility — we'll provide all necessary documentation (commercial invoice, packing list, bill of lading, certificate of origin).</dd>
+        <dt data-zh="你们负责清关吗？">Do you handle customs clearance?</dt>
+        <dd data-zh="我们负责中国出口清关。目的港的进口清关由买方负责——我们会提供所有必要的单证（商业发票、装箱单、提单、原产地证）。">We handle export clearance in China. Import clearance at your destination is the buyer's responsibility — we'll provide all necessary documentation (commercial invoice, packing list, bill of lading, certificate of origin).</dd>
       </dl>
     </div>
   </div>
@@ -188,33 +193,33 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Fenxing Flock</h4>
-        <p>Foshan Fenxing Technology Co., Ltd.</p>
-        <p>Flock fiber and raw materials supplier from China.</p>
+        <p data-zh="佛山分形科技有限公司">Foshan Fenxing Technology Co., Ltd.</p>
+        <p data-zh="来自中国的植绒纤维与原料供应商">Flock fiber and raw materials supplier from China.</p>
       </div>
       <div class="footer-col">
-        <h4>Products</h4>
-        <a href="products.html#flock-fiber">Flock Fibers</a>
-        <a href="products.html#fiber-tow">Fiber Tow</a>
-        <a href="products.html#adhesives">Adhesives</a>
-        <a href="products.html#color-paste">Color Pastes</a>
-        <a href="products.html#chemicals">Chemicals</a>
-        <a href="products.html#equipment">Equipment</a>
+        <h4 data-zh="产品">Products</h4>
+        <a href="products.html#flock-fiber" data-zh="绒毛">Flock Fibers</a>
+        <a href="products.html#fiber-tow" data-zh="丝束">Fiber Tow</a>
+        <a href="products.html#adhesives" data-zh="粘合剂">Adhesives</a>
+        <a href="products.html#color-paste" data-zh="色浆">Color Pastes</a>
+        <a href="products.html#chemicals" data-zh="化工原料">Chemicals</a>
+        <a href="products.html#equipment" data-zh="设备">Equipment</a>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
-        <a href="about.html">About Us</a>
-        <a href="resources.html">Resources</a>
-        <a href="contact.html">Contact</a>
+        <h4 data-zh="快速链接">Quick Links</h4>
+        <a href="about.html" data-zh="关于我们">About Us</a>
+        <a href="resources.html" data-zh="资源">Resources</a>
+        <a href="contact.html" data-zh="联系">Contact</a>
       </div>
       <div class="footer-col">
-        <h4>Contact</h4>
-        <p><svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Foshan, Guangdong, China</p>
+        <h4 data-zh="联系我们">Contact</h4>
+        <p><svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> <span data-zh="中国 广东 佛山">Foshan, Guangdong, China</span></p>
         <p><a href="https://wa.me/8613420870637" target="_blank" rel="noopener"><svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +86 134 2087 0637</a></p>
         <p><a href="mailto:fenxingflock@163.com"><svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> fenxingflock@163.com</a></p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Foshan Fenxing Technology Co., Ltd. All rights reserved.</p>
+      <p data-zh="© 2026 佛山分形科技有限公司 版权所有">&copy; 2026 Foshan Fenxing Technology Co., Ltd. All rights reserved.</p>
     </div>
   </div>
 </footer>
