@@ -546,6 +546,12 @@ nav a.active {
   border-radius: var(--radius);
 }
 
+/* 办公室照片：小微企业办公室较小，缩小展示、居中，避免占满整栏 */
+.about-content .about-office {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 .about-text h2 {
   font-size: 1.6rem;
   color: var(--navy);
