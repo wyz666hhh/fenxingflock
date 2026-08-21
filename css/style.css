@@ -517,6 +517,15 @@ nav a.active {
   color: var(--gray);
 }
 
+/* 首页应用领域真图卡片（Where Flock Adds Value） */
+.why-item .app-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+}
+
 /* ============================================================
    📌 八、内页顶部横幅（Products / About / Resources / Contact）
    ============================================================ */
